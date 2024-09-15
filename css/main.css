@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 img{
+    border: solid 1px blue;
+    width: 5em;
+}
+
+header{
+    display: flex;
+    height: 4.5em;
+    background-color: pink;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+}
+/*NAVIGATION*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border: solid 1px red;
+    width: 100%;
+    align-items: center;
+    background: pink;
+}
+.global-menu{
+    position: relative;
+    color: black;
+    text-align: left;
+}
+
+.global-menu li{
+    display: inline-block;
+}
+
+.global-menu a{
+    display: block;
+    padding: 10px 30px;
+}
+
+.menu{
+    height: 4.5rem;/*navと同じ高さにするとホバーいい感じ*/
+}
+.menu:hover > a{
+    background-color: azure;
+}
+
+.sub-menu > li > a{
+    font-size: 1em;
+}
+
+.sub-menu > li > a:hover{
+    background: lightblue;
+}
+
+.sub-menu{
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: -5rem;
+    padding: 30px;
+    color: black;
+    background-color: beige;
+    visibility: hidden;
+}
+
+.menu:hover .sub-menu{
+    visibility: visible;
+}
+
+.sub-menu a:hover{
+    color: white;
+}
+
+.header-right{
+    display: flex;
+}
