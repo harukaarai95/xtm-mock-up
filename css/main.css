@@ -6,6 +6,14 @@
     list-style: none;
 }
 
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --navy: #003B52;
+    --blue: #0093CD;
+}
 h1 img{
     border: solid 1px blue;
     width: 5em;
@@ -31,7 +39,6 @@ nav{
 }
 .global-menu{
     position: relative;
-    color: black;
     text-align: left;
 }
 
@@ -41,7 +48,8 @@ nav{
 
 .global-menu a{
     display: block;
-    padding: 10px 30px;
+    padding: 0;
+    color: var(--navy);
 }
 
 .menu{
@@ -53,31 +61,92 @@ nav{
 
 .sub-menu > li > a{
     font-size: 1em;
-}
-
-.sub-menu > li > a:hover{
-    background: lightblue;
+    text-decoration: none;
+    font-style: bold;
 }
 
 .sub-menu{
     width: 100vw;
     position: absolute;
     top: 100%;
-    left: -5rem;
+    left: 0;
     padding: 30px;
-    color: black;
+    color: var(--navy);
     background-color: beige;
-    visibility: hidden;
+    /*visibility: hidden;*//************tukeru***********************/
+    transform: translateX(-10rem);
 }
 
+.item-wrap p{
+    font-size: .8em;
+}
 .menu:hover .sub-menu{
     visibility: visible;
-}
-
-.sub-menu a:hover{
-    color: white;
 }
 
 .header-right{
     display: flex;
 }
+
+.sub-menu li{
+    transform: translateX(clac(-2rem+30px));/*これで移動できる！！-2remで画面端、30px for sub menu padding*/
+    display: flex;
+}
+
+.sub-item-wrap{
+    display: flex;
+}
+
+.sub-item-container{
+    border: solid 1px;
+    flex: 1;/* make all flex items same width*/
+}
+
+nav h2{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.nav-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: solid 1px var(--blue);
+    display: inline;
+}
+
+.sub-item-box{
+    display: flex;
+    gap: 0 .5rem;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    margin: .5em 0;
+}
+
+.sub-menu-product-name{
+    font-weight: bold;
+    color: var(--navy);
+    font-size: 1em;
+    line-height: 1em;
+    height: 1em;
+}
+
+.sub-item-box:hover .sub-menu-product-name{
+    border-bottom: solid 1px var(--blue);
+    color: var(--blue);
+}
+
+.nav-item-description{
+    height: 100%;
+    background-color: #0093CD;
+}
+.aiueo{
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 0;
+}
+
