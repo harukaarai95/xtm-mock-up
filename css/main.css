@@ -1,152 +1,427 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-:root{
-    --navy: #003B52;
-    --blue: #0093CD;
-}
-h1 img{
-    border: solid 1px blue;
-    width: 5em;
+:root {
+  --navy: #003b52;
+  --blue: #0093cd;
+  --light-blue: #e5f4fa;
+  --gray: #bcbcc6;
+  --yellow: #c4f750;
+  --dark-gray: #4f535e;
+  --sky: #e5f4fa;
 }
 
-header{
-    display: flex;
-    height: 4.5em;
-    background-color: pink;
-    justify-content: space-between;
-    align-content: center;
-    padding: 0;
+.flex {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 img {
+  border: solid 1px blue;
+  width: 5em;
+}
+
+header {
+  display: flex;
+  height: 4.5em;
+  background-color: var(--sky);
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 3%;
 }
 /*NAVIGATION*/
-nav{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    border: solid 1px red;
-    width: 100%;
-    align-items: center;
-    background: pink;
-}
-.global-menu{
-    position: relative;
-    text-align: left;
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: solid 1px red;
+  width: 100%;
+  align-items: center;
+  background: var(--sky);
 }
 
-.global-menu li{
-    display: inline-block;
+.menu {
+  margin-right: 0.5em;
+}
+.global-menu {
+  position: relative;
+  text-align: left;
 }
 
-.global-menu a{
-    display: block;
-    padding: 0;
-    color: var(--navy);
+.global-menu li {
+  display: inline-block;
 }
 
-.menu{
-    height: 4.5rem;/*navと同じ高さにするとホバーいい感じ*/
-}
-.menu:hover > a{
-    background-color: azure;
-}
-
-.sub-menu > li > a{
-    font-size: 1em;
-    text-decoration: none;
-    font-style: bold;
+.global-menu a {
+  display: block;
+  padding: 0;
+  color: var(--navy);
 }
 
-.sub-menu{
-    width: 100vw;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 30px;
-    color: var(--navy);
-    background-color: beige;
-    /*visibility: hidden;*//************tukeru***********************/
-    transform: translateX(-10rem);
+.menu {
+  height: 4.5rem; /*navと同じ高さにするとホバーいい感じ*/
 }
 
-.item-wrap p{
-    font-size: .8em;
-}
-.menu:hover .sub-menu{
-    visibility: visible;
+.main-line {
+  text-decoration: none;
+  position: relative;
 }
 
-.header-right{
-    display: flex;
+.main-line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: var(--blue);
+  transition: width 0.4s;
 }
 
-.sub-menu li{
-    transform: translateX(clac(-2rem+30px));/*これで移動できる！！-2remで画面端、30px for sub menu padding*/
-    display: flex;
+.main-line:hover::after {
+  width: 100%;
 }
 
-.sub-item-wrap{
-    display: flex;
+.sub-menu > li > a {
+  font-size: 1em;
+  text-decoration: none;
+  font-style: bold;
 }
 
-.sub-item-container{
-    border: solid 1px;
-    flex: 1;/* make all flex items same width*/
+.main {
+  margin-right: 1.8em;
+}
+/*under arrow mark*/
+.nav-main-container {
+  display: inline-flex;
+  gap: 0;
+  align-items: center;
+}
+.arrow-under {
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+}
+.arrow-under:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 2px var(--blue);
+  border-right: solid 2px var(--blue);
+  transform: rotate(135deg);
+  position: absolute;
+  bottom: -0.15em;
+  right: 0.6em;
+  margin: auto;
+  transition: transform 0.4s ease;
 }
 
-nav h2{
-    font-size: 1em;
-    font-weight: 400;
+.nav-main-container:has(a:hover) .arrow-under:after {
+  /*hasを使って親要素内のaにhoverされたら動く*/
+  transform: translateY(25%) rotate(-45deg);
 }
 
-.nav-img{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: solid 1px var(--blue);
-    display: inline;
+.nav-main-container a {
+  font-weight: bold;
+}
+/******************************/
+.top-nav {
+  margin-top: calc(4.5rem - 12px);
+  padding: 0 5%;
+}
+.sub-menu {
+  width: 100vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 30px;
+  color: var(--navy);
+  background-color: beige;
+  border-top: solid 2px gray;
+  visibility: hidden; /************tukeru***********************/
+  transform: translateX(-12.8rem); /*横軸を親要素からずらす*/
 }
 
-.sub-item-box{
-    display: flex;
-    gap: 0 .5rem;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px;
-    margin: .5em 0;
+.item-wrap p {
+  font-size: 0.8em;
 }
 
-.sub-menu-product-name{
-    font-weight: bold;
-    color: var(--navy);
-    font-size: 1em;
-    line-height: 1em;
-    height: 1em;
+/*sub-menu animation*/
+.item-wrap {
+  animation: fadeIn 3s ease 1 normal backwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.sub-item-box:hover .sub-menu-product-name{
-    border-bottom: solid 1px var(--blue);
-    color: var(--blue);
+.menu:hover .sub-menu {
+  visibility: visible;
 }
 
-.nav-item-description{
-    height: 100%;
-    background-color: #0093CD;
-}
-.aiueo{
-    border: solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    gap: 0;
+.sub-menu li {
+  transform: translateX(
+    clac(-2rem+30px)
+  ); /*これで移動できる！！-2remで画面端、30px for sub menu padding*/
+  display: flex;
 }
 
+.sub-item-wrap {
+  display: flex;
+}
+
+.sub-item-container {
+  border-right: solid 1px var(--gray);
+  flex: 1; /* make all flex items same width*/
+  margin-right: 1em;
+}
+
+nav h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.nav-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 1px var(--blue);
+  display: inline;
+}
+
+.sub-item-box {
+  display: flex;
+  gap: 0 0.5rem;
+  align-items: center;
+  border: solid 1px;
+  margin: 0.5em 0;
+}
+
+.sub-menu-product-name {
+  font-weight: bold;
+  color: var(--navy);
+  font-size: 1em;
+  line-height: 1em;
+  height: 1em;
+}
+
+.sub-item-box:hover .sub-menu-product-name {
+  border-bottom: solid 1px var(--blue);
+  color: var(--blue);
+}
+
+.nav-item-description {
+  height: 100%;
+}
+.title-and-description {
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  gap: 0;
+}
+
+.nav-img-big img {
+  width: 7em;
+  height: 5em;
+}
+
+.nav-img-big {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  border: solid 1px var(--blue);
+}
+
+.img-margin-r {
+  margin-right: 0.8em;
+}
+
+.nav-img-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: solid 1px;
+}
+
+.nav-img-box button {
+  height: 2.5em;
+  margin: 0 auto;
+  text-wrap: none;
+  padding: 0.2em;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
+
+.nav-img-box button a {
+  border-bottom: solid 1px;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-arrow {
+  /*right arrow*/
+  color: var(--blue);
+}
+
+.nav-img-box button:hover {
+  border: solid 1px var(--blue);
+  border-radius: 10px;
+}
+
+.tms-nav-p {
+  margin-left: 0.8em;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.3em;
+}
+
+.nav-flex {
+  display: flex;
+  gap: 0.5em;
+}
+
+.hover-nav a:hover {
+  color: var(--blue);
+}
+
+.main-name {
+  font-size: 15px;
+}
+
+.nav-sub-item-listed {
+  font-size: 14px;
+}
+
+/****************/
+.header-right {
+  display: flex;
+  align-self: center;
+  gap: 1em;
+}
+
+.header-right a:first-child {
+  color: var(--navy);
+  vertical-align: middle;
+}
+
+.header-right a:nth-child(2) {
+  color: var(--dark-gray);
+}
+
+.nav-r-btn {
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-demo {
+  background-color: var(--yellow);
+  width: 120px;
+  height: 30px;
+}
+.nav-demo:hover {
+  background-color: #9bc33f;
+}
+
+.nav-log-in {
+  width: 61.5px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 3px;
+}
+
+.header-right a:nth-child(2):hover {
+  color: black;
+}
+.nav-log-in:hover {
+  border: solid 3px var(--blue);
+}
+
+/**************language menu*********************/
+.lang-item a:first-child {
+  color: var(--dark-gray);
+}
+/*.lang-menu-wrap {
+  width: 71.25px;
+  height: 30px;
+}*/
+.lang-lists {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.lang-drpdwn-list {
+  display: none; /**************************/
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background-color: white;
+  border: solid 1px black; /*************************/
+  border-radius: 15px;
+}
+.lang-item:hover .lang-drpdwn-list {
+  display: block;
+}
+.lang-item {
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+  border: solid 3px var(--dark-gray);
+  border-radius: 14px;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang-drpdwn-list a {
+  width: 100%;
+  height: 100%;
+  margin: 0.4em 0;
+  padding: 0.2em 0;
+}
+
+.lang-drp-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-drp-item a:hover {
+  background-color: var(--sky);
+  color: black;
+  border-radius: 15px;
+  border: none;
+}
