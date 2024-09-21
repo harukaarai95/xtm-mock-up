@@ -1,0 +1,9 @@
+@media screen and (max-width: 550px) {
+    html{
+    /* 1rem = 50pxと再定義 */
+    font-size: 50px;
+    }
+    body{
+    /* （50px * 0.28rem = 14px） */
+    font-size: 0.28rem;
+    }

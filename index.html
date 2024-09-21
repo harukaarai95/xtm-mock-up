@@ -12,12 +12,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--CSS library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <div class="header-wrapper">
         <header>
-            <h1><img src="./assets/logo/logo.png" alt="XTM logo"></h1>
+            <h1 class="animate__animated animate__zoomIn"><img src="./assets/logo/logo.png" alt="XTM logo"></h1>
             <nav role="navigation" class="global-menu">
                 <ul class="top-nav">
                     <li class="menu">
@@ -27,7 +34,7 @@
                             <li class="sub-item-wrap">
                                 <div class="sub-item-container">
                                     <div class="item-wrap">
-                                        <h2>Translation Platform</h2>
+                                        <p class="title-nav-a">Translation Platform</p>
                                         <p>Our translation product at a glance</p>
                                         <div class="sub-item-container-link">
                                             <a href="#">
@@ -65,7 +72,7 @@
                                 </div><!--sub-item-container -->
                                 <div class="sub-item-container">
                                     <div class="item-wrap">
-                                        <h2>Productivity tools</h2>
+                                        <p class="title-nav-a">Productivity tools</p>
                                         <p>Take your translation process to the next level</p>
                                         <div class="sub-item-container-link">
                                             <a href="#">
@@ -109,7 +116,7 @@
                                 </div><!--sub item container-->
                                 <div class="sub-item-container">
                                     <div class="item-wrap">
-                                        <h2>Reporting tools</h2>
+                                        <p class="title-nav-a">Reporting tools</p>
                                         <p>Leverage the power of insights and data</p>
                                         <div class="sub-item-container-link">
                                             <a href="#">
@@ -400,11 +407,12 @@
                                                 <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
                                                 <div>
                                                     <a href="#">
-                                                        <h2><span class="sub-menu-product-name hover-nav">What Is a
+                                                        <p class="title-nav-a"><span
+                                                                class="sub-menu-product-name hover-nav">What Is a
                                                                 Translation
                                                                 Management
                                                                 System?</span>
-                                                        </h2>
+                                                        </p>
                                                         <p>Discover everything you need to know about a Translation
                                                             Management
                                                             System
@@ -479,9 +487,136 @@
     </div><!--header-wrapper end-->
     <main>
         <div class="purple-wrap">
-            <p>Exciting Announcement: XTM International acquires Locale &#124;</p>
+            <p>Exciting Announcement: XTM International acquires Locale &#124; </p>
             <a href="#" class="announce-a">Learn more</a>
         </div>
+        <section id="hero" class="flex">
+            <div class="hero-left">
+                <h2>Localization software that drives global growth</h2>
+                <p>Put an end to manual, disconnected, and inefficient translation processes. With the XTM <a href="#"
+                        class="main-link">Translation
+                        Platform</a>, you can easily deploy your content in any language, at any time, while maintaining
+                    full
+                    visibility, accuracy, and control.</p>
+                <div class="flex"><a href="#" class="main-btn-blue">Book a Demo</a>
+                    <a href="#" class="main-btn-nocolor">Access Product Tours</a>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/imgs/hero.png" alt="main image">
+            </div>
+        </section>
+        <section id="brand">
+            <h3>Brands that trust us</h3>
+            <div class="slide">
+                <img src="./assets/logo/logo-a.png" alt="company a logo">
+                <img src="./assets/logo/logo-b.png" alt="company b logo">
+                <img src="./assets/logo/logo-c.png" alt="company c logo">
+                <img src="./assets/logo/logo-d.png" alt="company d logo">
+                <img src="./assets/logo/logo-a.png" alt="company a logo">
+                <img src="./assets/logo/logo-b.png" alt="company b logo">
+                <img src="./assets/logo/logo-c.png" alt="company c logo">
+                <img src="./assets/logo/logo-d.png" alt="company d logo">
+                <img src="./assets/logo/logo-a.png" alt="company a logo">
+                <img src="./assets/logo/logo-b.png" alt="company b logo">
+                <img src="./assets/logo/logo-c.png" alt="company c logo">
+                <img src="./assets/logo/logo-d.png" alt="company d logo">
+                <img src="./assets/logo/logo-a.png" alt="company a logo">
+                <img src="./assets/logo/logo-b.png" alt="company b logo">
+                <img src="./assets/logo/logo-c.png" alt="company c logo">
+                <img src="./assets/logo/logo-d.png" alt="company d logo">
+                <img src="./assets/logo/logo-a.png" alt="company a logo">
+                <img src="./assets/logo/logo-b.png" alt="company b logo">
+                <img src="./assets/logo/logo-c.png" alt="company c logo">
+                <img src="./assets/logo/logo-d.png" alt="company d logo">
+                <img src="./assets/logo/logo-a.png" alt="company a logo">
+            </div>
+        </section>
+        <section id="meet-tms">
+            <h2>Meet the XTM Translation Platform</h2>
+            <div class="flex">
+                <div class="meet-tms-box">
+                    <h3>Translation Management</h3>
+                    <img src="./assets/imgs/cloud-screens.png" alt="xtm cloud image">
+                    <p>Do you need to centralize your language assets, better leverage
+                        previously translated content, and automate your localization
+                        process? With XTM Cloud TMS, you can achieve a single source of
+                        truth, enter new markets faster, connect to your favorite tools via XTM
+                        Connect, and fully automate localization processes.</p>
+                    <a href="#" class="main-btn-blue">Learn more</a>
+                </div>
+                <div class="meet-tms-box">
+                    <h3>Translation Business and Vendor Management
+                    </h3>
+                    <img src="./assets/imgs/xtrf.png" alt="xtrf image">
+                    <p>Want to elevate your project and vendor managers’ efficiency with smart automation and AI, reduce
+                        time spent on mundane tasks, and double profitability and output overnight? With XTRF by XTM,
+                        you
+                        can deliver more translation in less time, monitor projects and track profitability, automate
+                        translation workflows, and more.</p>
+                    <a href="#" class="main-btn-blue">Learn more</a>
+                </div>
+                <div class="meet-tms-box">
+                    <h3>Software Localization</h3>
+                    <img src="./assets/imgs/rigi.png" alt="rigi image">
+                    <p>Ready to streamline your software localization process by separating it from your development
+                        efforts
+                        and leveraging dynamic visual context? With Rigi by XTM, you can accelerate agile development,
+                        empower linguists to work independently, maintain up-to-date localized documentation, and more.
+                    </p>
+                    <a href="#" class="main-btn-blue">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <section id="step">
+            <div class="step-box"><!--クリックしたら消すようにする-->
+                <p><span class="step">01</span></p>
+                <div class="step-box-item">
+                    <h2>GROW</h2>
+                    <p><strong>Localize</strong></p>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="./assets/imgs/step-1.png" alt="delivery image">
+                <div class="step-box-item-2">
+                    <p class="blue-badge">Localize</p>
+                    <h3>Grow</h3>
+                    <p>Localizing and deploying material across multiple regions is complex. You need localization
+                        software
+                        that
+                        is simple, scalable, and robust. XTM provides a translation platform that will help you deliver
+                        your
+                        content localized into multiple languages faster and more cost-effectively, allowing you to land
+                        into
+                        new markets more quickly and easily.</p>
+                    <ul class="step-ul">
+                        <li>
+                            <div class="step-div-1">
+                                <h4>Increase Localization Productivity</h4>
+                                <p>Leverage advanced workflow management and intelligent automation.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-div-1">
+                                <h4>Gain a Competitive Advantage</h4>
+                                <p>Localize your content in a fraction of the time and maintain your brand voice and
+                                    image
+                                    wherever
+                                    you go.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-div-1">
+                                <h4>Grow Globally, Faster</h4>
+                                <p>Reach more people, in more languages, with more content than ever before.</p>
+                            </div>
+                        </li>
+                        <li class="step-li-last"><a href="#" class="main-btn-blue">Learn more</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
     </main>
 </body>
 
