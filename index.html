@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localization Software - Global Translation Management Platform</title>
-    <link rel="stylesheet" href="./css/main.css">
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +18,11 @@
         rel="stylesheet">
     <!--CSS library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--my css-->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -569,19 +573,59 @@
             </div>
         </section>
         <section id="step">
-            <div class="step-box"><!--クリックしたら消すようにする-->
-                <p><span class="step">01</span></p>
-                <div class="step-box-item">
-                    <h2>GROW</h2>
-                    <p><strong>Localize</strong></p>
-                </div>
-            </div>
-            <div class="flex">
-                <img src="./assets/imgs/step-1.png" alt="delivery image">
-                <div class="step-box-item-2">
+            <ul>
+                <li>
+                    <label class="radio-step" for="step-1">
+                        <input type="radio" class="radio-s" id="step-1" name="steps" checked>
+                        <div class="step-box-1">
+                            <div class="step-box-item">
+                                <p class="step-p-1">GROW</p>
+                                <p class="step-p-2"><strong>Localize</strong></p>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-step" for="step-2">
+                        <input type="radio" class="radio-s" id="step-2" name="steps">
+                        <div class="step-box-2">
+                            <div class="step-box-item-2">
+                                <p class="step-p-01">CONNECT</p>
+                                <p class="step-p-02"><strong>Go global</strong></p>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-step" for="step-3">
+                        <input type="radio" class="radio-s" id="step-3" name="steps">
+                        <div class="step-box-3">
+                            <div class="step-box-item-3">
+                                <p class="step-p-001">AUTOMATE</p>
+                                <p class="step-p-002"><strong>Increase efficiency</strong></p>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-step" for="step-4">
+                        <input type="radio" class="radio-s" id="step-4" name="steps">
+                        <div class="step-box-4">
+                            <div class="step-box-item-4">
+                                <p class="step-p-0001">LEVARAGE AI</p>
+                                <p class="step-p-0002"><strong>Unleash potential</strong></p>
+                            </div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+            <div class="flex step-1-container">
+                <img src="./assets/imgs/step-2.png" alt="delivery image">
+                <div class="step-box-content">
                     <p class="blue-badge">Localize</p>
-                    <h3>Grow</h3>
-                    <p>Localizing and deploying material across multiple regions is complex. You need localization
+                    <h2>Grow</h2>
+                    <p class="step-body">Localizing and deploying material across multiple regions is complex. You need
+                        localization
                         software
                         that
                         is simple, scalable, and robust. XTM provides a translation platform that will help you deliver
@@ -616,6 +660,318 @@
                 </div>
             </div>
 
+            <div class="flex step-2-container">
+                <div class="flex">
+                    <img src="./assets/imgs/step-2.png" alt="connecting image">
+                    <div class="step-box-content">
+                        <p class="blue-badge">Go global</p>
+                        <h2>Connect</h2>
+                        <p class="step-body">Save time, cut down on excessive email communication, and reduce manual
+                            actions
+                            using XTM connectors. Integrate XTM&#39;s localization tools with your existing content
+                            systems
+                            and
+                            other solutions to streamline and automate your localization workflow.</p>
+                        <ul class="step-ul">
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Seamless File Management</h4>
+                                    <p>Create translation projects directly from your favorite interface.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Time-saving Workflows</h4>
+                                    <p>Create and use fully customizable and automated workflows to speed up your
+                                        localization projects.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Eliminate Manual Work</h4>
+                                    <p>Content is automatically sent to XTM Cloud and then pushed back into your
+                                        platform,
+                                        erasing the need for tedious manual work.</p>
+                                </div>
+                            </li>
+                            <li class="step-li-last"><a href="#" class="main-btn-blue">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex step-3-container">
+                <div class="flex">
+                    <img src="./assets/imgs/step-3.png" alt="automating image">
+                    <div class="step-box-content">
+                        <p class="blue-badge">Increrase efficiency</p>
+                        <h2>Automate</h2>
+                        <p class="step-body">Increase your efficiency by harnessing the power of automation. With the
+                            XTM
+                            Translation Platform, you can automate manual processes, reduce costs and turnaround times,
+                            and
+                            enhance your content quality.</p>
+                        <ul class="step-ul">
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Leverage Machine Translation</h4>
+                                    <p>Deploy machine translation to streamline and accelerate localization of content
+                                        into
+                                        multiple languages.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Effortless Communication</h4>
+                                    <p>Create an effective translation management environment without unnecessary delays
+                                        thanks to automatic notifications and real-time communication on a single
+                                        platform.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Eliminate Manual Work</h4>
+                                    <p>Content is automatically sent to XTM Cloud and then pushed back into your
+                                        platform,
+                                        erasing the need for tedious manual work.</p>
+                                </div>
+                            </li>
+                            <li class="step-li-last"><a href="#" class="main-btn-blue">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex step-4-container">
+                <div class="flex">
+                    <img src="./assets/imgs/step-4.png" alt="ai image">
+                    <div class="step-box-content">
+                        <p class="blue-badge">Unleash potential</p>
+                        <h2>Artificial Intelligence</h2>
+                        <p class="step-body">Artificial Intelligence (AI) is now a basic need in translation technology
+                            and
+                            is changing how companies gain a competitive advantage. XTM AI teaches machines how human
+                            language works, training computers to understand and recognize the nuances of human language
+                            to
+                            improve translation productivity.</p>
+                        <ul class="step-ul">
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Faster Time to Market</h4>
+                                    <p>Leverage the latest AI technologies to translate your content more quickly and go
+                                        to
+                                        market in a fraction of the time.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>More Content + Better Content</h4>
+                                    <p>AI localization technology allows you to increase your content output with the
+                                        same
+                                        resources and time, which means better quality and happier customers.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-div-1">
+                                    <h4>Embrace the Future</h4>
+                                    <p>XTM’s features enable you to harness the full power of AI for your translations
+                                        and
+                                        leverage the technology of the future, today.</p>
+                                </div>
+                            </li>
+                            <li class="step-li-last"><a href="#" class="main-btn-blue">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="testmonials">
+            <div class="container pb-lg-5">
+                <h2 class="text-center pt-lg-4 pb-lg-4">Customer testmonials</h2>
+                <div class="row gap-3 justify-content-center">
+                    <div class="col-12 col-lg-3">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <p class="card-text testmonial-txt">As a company which provides services to other
+                                    brands,
+                                    our
+                                    service needs to be as efficient as possible. The improvements in localization
+                                    quality
+                                    and
+                                    productivity
+                                    brought about by the implementation of XTM Cloud were absolutely key.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="./assets/logo/logo-a.png" alt="company logo" class="test-img d-block"
+                                        style="width: 4rem; height: 4rem;">
+                                    <div>
+                                        <p class="fw-bold mb-0">John Smith</p>
+                                        <p class="fs-6 text-secondary">Senior Head of Localization Services, TECH
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <a href="#" class="card-link ms-auto text-secondary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <p class="card-text testmonial-txt">As a company which provides services to other
+                                    brands,
+                                    our
+                                    service needs to be as efficient as possible. The improvements in localization
+                                    quality
+                                    and
+                                    productivity
+                                    brought about by the implementation of XTM Cloud were absolutely key.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="./assets/logo/logo-a.png" alt="company logo" class="test-img d-block"
+                                        style="width: 4rem; height: 4rem;">
+                                    <div>
+                                        <p class="fw-bold mb-0">John Smith</p>
+                                        <p class="fs-6 text-secondary">Senior Head of Localization Services, TECH
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <a href="#" class="card-link ms-auto text-secondary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <p class="card-text testmonial-txt">As a company which provides services to other
+                                    brands,
+                                    our
+                                    service needs to be as efficient as possible. The improvements in localization
+                                    quality
+                                    and
+                                    productivity
+                                    brought about by the implementation of XTM Cloud were absolutely key.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="./assets/logo/logo-a.png" alt="company logo" class="test-img d-block"
+                                        style="width: 4rem; height: 4rem;">
+                                    <div>
+                                        <p class="fw-bold mb-0">John Smith</p>
+                                        <p class="fs-6 text-secondary">Senior Head of Localization Services, TECH
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <a href="#" class="card-link ms-auto text-secondary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="connect">
+            <h2>XTM Connect</h2>
+            <p>Save time, cut down on excessive email communication, and reduce manual actions using XTM connectors.
+                Integrate XTM Cloud with your existing content systems, and other solutions to streamline and automate
+                the localization workflow.</p>
+            <div class="connect-item-wrap">
+                <ul class="connect-list flex">
+                    <li>
+                        <label class="radio-connect" for="radio-1">
+                            <input type="radio" class="c-radio__input" id="radio-1" name="sample" value="1" checked>
+                            <span class="connect-underline">CMS</span>
+                        </label>
+
+                    </li>
+                    <li>
+                        <label class="radio-connect" for="radio-2">
+                            <input type="radio" class="c-radio__input" name="sample" id="radio-2" value="2">
+                            <span class="connect-underline">Marketing Automation</span>
+                        </label>
+                    </li>
+                    <li><label class="radio-connect" for="radio-3">
+                            <input type="radio" class="c-radio__input" name="sample" id="radio-3" value="2">
+                            <span class="connect-underline">Ecommerce &amp; PIM</span>
+                        </label>
+                    </li>
+                    <li><label class="radio-connect" for="radio-4">
+                            <input type="radio" class="c-radio__input" id="radio-4" name="sample" value="2">
+                            <span class="connect-underline">CCMS</span>
+                        </label>
+                    </li>
+                    <li><label class="radio-connect" for="radio-5">
+                            <input type="radio" class="c-radio__input" id="radio-5" name="sample" value="2">
+                            <span class="connect-underline">Design and Business Tools</span>
+                        </label>
+                    </li>
+                    <li><label class="radio-connect" for="radio-6">
+                            <input type="radio" class="c-radio__input" id="radio-6" name="sample" value="2">
+                            <span class="connect-underline">Customer Support</span>
+                        </label>
+                    </li>
+
+                    <li><label class="radio-connect" for="radio-7">
+                            <input type="radio" class="c-radio__input" id="radio-7" name="sample" value="2">
+                            <span class="connect-underline">Developer Tools</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="connect-1 gallery">
+                <figure class="logo-a"><img src="./assets/logo/logo-sample.svg" alt="company a"></figure>
+                <figure class="logo-b"><img src="./assets/logo/logo-a.png" alt="company b"></figure>
+                <figure class="logo-c"><img src="./assets/logo/logoc.svg" alt="companyc"></figure>
+                <figure class="logo-d"><img src="./assets/logo/logod.svg" alt="companyd"></figure>
+                <figure class="logo-e"><img src="./assets/logo/logo-b.png" alt="companye"></figure>
+                <figure class="logo-f"><img src="./assets/logo/logo-c.png" alt="companyf"></figure>
+                <figure class="logo-g"><img src="./assets/logo/logoaa.svg" alt="companyg"></figure>
+                <figure class="logo-h"><img src="./assets/logo/logo-a.png" alt="companyh"></figure>
+                <figure class="logoi"><img src="./assets/logo/logo-d.png" alt="companyi"></figure>
+                <figure class="logo-j"><img src="./assets/logo/logo-sample.svg" alt="companyj"></figure>
+                <figure class="logo-k"><img src="./assets/logo/logoaa.svg" alt="companyk"></figure>
+            </div>
+            <div class="connect-2">
+                <p>sample</p>
+                <img src="./assets/logo/logo-a.png" alt="company">
+            </div>
+            <div class="connect-3">
+                <p>sample3</p>
+                <img src="./assets/logo/logoaa.svg" alt="company">
+            </div>
+            <div class="connect-4">
+                <p>sample4</p>
+                <img src="./assets/logo/logod.svg" alt="company">
+            </div>
+            <div class="connect-5">
+                <p>sample5</p>
+                <img src="./assets/logo/logo-sample.svg" alt="company">
+            </div>
+            <div class="connect-6">
+                <p>sample6</p>
+                <img src="./assets/logo/logoc.svg" alt="company">
+            </div>
+            <div class="connect-7">
+                <p>sample7</p>
+                <img src="./assets/logo/logo-sample.svg" alt="company">
+            </div>
+            <div class="flex connect-bottom-btn">
+                <a href="#" class="main-btn-blue">Go Global Now</a>
+                <a href="#" class="main-btn-nocolor">Learn More</a>
+            </div>
+        </section>
+        <section id="action">
+            <div class="flex action-wrap">
+                <div class="action-content">
+                    <h2>Want to see XTM products in action?</h2>
+                    <p><strong>Our Demo Gallery!</strong></p>
+                    <a href="#" class="main-btn-blue">Access Product Tours</a>
+                </div>
+                <img src="./assets/imgs/action.png" alt="working">
+            </div>
         </section>
     </main>
 </body>
