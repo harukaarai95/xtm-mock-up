@@ -1,13 +1,16 @@
-@media screen and (max-width: 1020px) and (min-width: 768px) {
+@media screen and (max-width: 1280px) /*and (min-width: 768px) */ {
   html {
     font-size: 50%; /* 1rem = 5px */
   }
   body {
-    font-size: 2.4rem; /* 12px */
+    font-size: 3rem; /* 15px */
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3.5rem;
   }
   /*********************************************************/
   .header-wrapper {
@@ -61,7 +64,11 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-
+  .sub-item-container {
+    border-right: none;
+    flex: 1; /* make all flex items same width*/
+    margin-right: 0em;
+  }
   .wrap-navi {
     display: grid;
     grid-template-columns: auto 60rem 5rem;
@@ -76,10 +83,14 @@
   }
   .mobile-menu {
     display: block;
-    grid-column: 4;
+    grid-column: 1;
     grid-row: 1;
     margin: 0;
     padding: 0;
+  }
+  .top-nav .logo {
+    width: 120px;
+    margin: 3rem auto;
   }
   /*.lang-item:hover .lang-drpdwn-list {/********same as desktop but does not work so use javascript************
     display: block;
@@ -96,7 +107,6 @@
     right: 0rem;
     width: 100%;
     height: auto;
-    background-color: pink;
     z-index: 15;
   }
   .top-nav {
@@ -109,7 +119,7 @@
   .top-nav li {
     align-self: center;
     justify-items: center;
-    width: 100vw;
+    width: 100%;
   }
 
   .sub-item-wrap {
@@ -140,12 +150,12 @@
     top: 4rem; /*to control the height above the element */
     left: 0;
     z-index: 16; /* above other elements */
-    width: 100vw;
+    width: 100%;
     transform: translateX(0);
     font-size: 1.2rem;
     visibility: visible;
     font-size: 14px;
-    height: 600%;
+    height: auto;
   }
   .sub-menu {
     display: none;
@@ -160,9 +170,9 @@
   .menu:has(.menu-section-5:checked) .sub-menu.i-5 {
     display: block; /* checked->display */
   }
-  /*.sub-item-wrap {
+  .sub-item-wrap {
     overflow: visible;
-  }*/
+  }
   .nav-img-box {
     flex-direction: column;
     width: 20%;
@@ -197,7 +207,96 @@
     width: 22rem;
     height: auto;
   }
+  #brand h3 {
+    font-size: 4rem;
+  }
+  .tab-mob {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #meet-tms h3 {
+    font-size: 3rem;
+  }
+  .meet-tms-box {
+    margin-bottom: 18rem;
+    width: 100%;
+  }
+  #meet-tms p {
+    height: auto;
+    font-size: 2.5rem;
+  }
+  #meet-tms .main-btn-blue {
+    width: 12rem;
+    height: auto;
+    margin: 3rem auto;
+  }
+
+  /*************************/
+  #step ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #step .flex {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .step-body {
+    font-size: 2.2rem;
+  }
+  .step-ul h4 {
+    font-weight: bold;
+    font-size: 2.2rem;
+  }
+  .step-ul p {
+    font-size: 2.2rem;
+  }
+  #step .main-btn-blue {
+    width: 20rem;
+  }
+  #step {
+    padding-bottom: 5rem;
+  }
+  #connect p {
+    font-size: 2.2rem;
+  }
+  /**************************/
+  .connect-list {
+    font-size: 2.2rem;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .connect-bottom-btn .main-btn-blue {
+    width: 20rem;
+  }
+  .connect-bottom-btn .main-btn-nocolor {
+    width: 15rem;
+  }
+  #action .flex.action-wrap {
+    flex-direction: column;
+  }
+  .action-content {
+    width: 100%;
+    position: relative;
+  }
+  #action p {
+    font-size: 2.5rem;
+  }
+  #action .main-btn-blue {
+    width: 22rem;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+  }
+  .action-wrap img {
+    margin-top: 3rem;
+  }
 }
+
 /****************** mobile ********************/
 @media screen and (max-width: 767px) {
   .wrap-navi {
@@ -221,7 +320,7 @@
   }
   .mobile-menu {
     display: block;
-    grid-column: -1;
+    grid-column: 1;
     grid-row: 1;
     width: 100%;
     height: 120%;
@@ -249,6 +348,7 @@
   #hero img {
     width: 100%;
     object-fit: contain;
+    margin-top: 18rem;
   }
   #hero .main-btn-blue {
     width: 15rem;
@@ -264,5 +364,59 @@
   #hero .main-btn-nocolor {
     width: 21.5rem;
     height: auto;
+  }
+  .meet-tms-box {
+    margin-bottom: 40rem;
+  }
+  .step-box-content {
+    width: 100%;
+  }
+  #step ul {
+    width: 100%;
+    margin: 0 3rem;
+  }
+  .connect-list {
+    justify-content: center;
+    align-items: center;
+  }
+  /************************/
+  #action .main-btn-blue {
+    width: 22rem;
+    position: absolute;
+    top: 15rem;
+    right: 0;
+  }
+  /*******************/
+  .flex.footer-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .foot-1 {
+    width: 100%;
+    margin-top: 0 auto;
+    text-align: center;
+  }
+  .footer-nav-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .footer-nav:nth-of-type(1),
+  .footer-nav:nth-of-type(2),
+  .footer-nav:nth-of-type(3) {
+    border: none;
+  }
+  .footer-nav:nth-of-type(1) {
+    padding: 0;
+  }
+  .footer-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .top-nav .logo {
+    width: 100px;
+    margin: 5rem auto;
   }
 }
