@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localization Software - Global Translation Management Platform</title>
+    <title>Mock up prj</title>
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,469 +22,515 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--my css-->
+    <!-- <link rel="stylesheet" href="./css/tablet.css"> -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
     <div class="header-wrapper">
         <header>
             <h1 class="animate__animated animate__zoomIn"><img src="./assets/logo/logo.png" alt="XTM logo"></h1>
-            <nav role="navigation" class="global-menu">
-                <ul class="top-nav">
-                    <li class="menu">
-                        <div class="nav-main-container"><a href="#" class="main main-line">Products</a><span
-                                class="arrow-under"></span></div>
-                        <ul class="sub-menu">
-                            <li class="sub-item-wrap">
-                                <div class="sub-item-container">
-                                    <div class="item-wrap">
-                                        <p class="title-nav-a">Translation Platform</p>
-                                        <p>Our translation product at a glance</p>
-                                        <div class="sub-item-container-link">
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x-3.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTM Cloud</span></p>
-                                                        <p class="nav-item-description">The Translation Management
-                                                            System of choice for enterprises</p>
+            <div class="wrap-navi">
+                <div class="mobile-menu"><input type="checkbox" id="checkbox" aria-label="Toggle navigation menu"
+                        aria-labelledby="nav-label" aria-controls="nav-menu" aria-expanded="false">
+                    <label for="checkbox" id="checkbox-label" role="button">
+                    </label>
+                </div>
+                <nav role="navigation" class="global-menu tab">
+                    <ul class="top-nav">
+                        <li class="menu">
+                            <div class="nav-main-container"><a href="#" class="main main-line">
+                                    <input type="checkbox" id="menu-section-1" class="menu-section-1" />
+                                    <label for="menu-section-1" class="menu-label">Products</label></a><span
+                                    class="arrow-under"></span></div>
+                            <ul class="sub-menu">
+                                <li class="sub-item-wrap">
+                                    <div class="sub-item-container">
+                                        <div class="item-wrap">
+                                            <p class="title-nav-a">Translation Platform</p>
+                                            <p>Our translation product at a glance</p>
+                                            <div class="sub-item-container-link">
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x-3.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTM Cloud</span></p>
+                                                            <p class="nav-item-description">The Translation Management
+                                                                System of choice for enterprises</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x-2.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTRF</span></p>
-                                                        <p class="nav-item-description">Simplifying Translation Business
-                                                            Management</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x-2.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTRF</span></p>
+                                                            <p class="nav-item-description">Simplifying Translation
+                                                                Business
+                                                                Management</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">Rigi</span> </p>
-                                                        <p class="nav-item-description">Better software translations
-                                                            with visual context</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">Rigi</span> </p>
+                                                            <p class="nav-item-description">Better software translations
+                                                                with visual context</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                        </div><!--sub-item-container-link-->
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container -->
-                                <div class="sub-item-container">
-                                    <div class="item-wrap">
-                                        <p class="title-nav-a">Productivity tools</p>
-                                        <p>Take your translation process to the next level</p>
-                                        <div class="sub-item-container-link">
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTM connect</span></p>
-                                                        <p>Automate your content localization</p>
+                                                </a>
+                                            </div><!--sub-item-container-link-->
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container -->
+                                    <div class="sub-item-container">
+                                        <div class="item-wrap">
+                                            <p class="title-nav-a">Productivity tools</p>
+                                            <p>Take your translation process to the next level</p>
+                                            <div class="sub-item-container-link">
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTM connect</span>
+                                                            </p>
+                                                            <p>Automate your content localization</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTM AI</span></p>
-                                                        <p>Leverage the power of AI in XTM Cloud</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTM AI</span></p>
+                                                            <p>Leverage the power of AI in XTM Cloud</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTM Portal</span></p>
-                                                        <p>Request and track translations quicky and easily</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTM Portal</span></p>
+                                                            <p>Request and track translations quicky and easily</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">Integrations</span></p>
-                                                        <p>Drive up productivity with integrated</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">Integrations</span>
+                                                            </p>
+                                                            <p>Drive up productivity with integrated</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                        </div><!-- sub-item-container-link -->
-                                    </div><!--item-wrap-->
-                                </div><!--sub item container-->
-                                <div class="sub-item-container">
-                                    <div class="item-wrap">
-                                        <p class="title-nav-a">Reporting tools</p>
-                                        <p>Leverage the power of insights and data</p>
-                                        <div class="sub-item-container-link">
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTM Cloud Business
-                                                                intelligence Dashboards</span></p>
-                                                        <p>Make smart, data-driven business decisions</p>
+                                                </a>
+                                            </div><!-- sub-item-container-link -->
+                                        </div><!--item-wrap-->
+                                    </div><!--sub item container-->
+                                    <div class="sub-item-container">
+                                        <div class="item-wrap">
+                                            <p class="title-nav-a">Reporting tools</p>
+                                            <p>Leverage the power of insights and data</p>
+                                            <div class="sub-item-container-link">
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTM Cloud Business
+                                                                    intelligence Dashboards</span></p>
+                                                            <p>Make smart, data-driven business decisions</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTRF Business Barometer
-                                                                Reporting</span></p>
-                                                        <p>Your compass to navigation the world of translation</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTRF Business
+                                                                    Barometer
+                                                                    Reporting</span></p>
+                                                            <p>Your compass to navigation the world of translation</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <a href="#">
-                                                <div class="sub-item-box">
-                                                    <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                                    <div class="title-and-description">
-                                                        <p><span class="sub-menu-product-name">XTRF Google BigQuery
-                                                                Module</span></p>
-                                                        <p>Unleash the power of Big Data</p>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="sub-item-box">
+                                                        <img src="./assets/imgs/x.png" alt="product logo"
+                                                            class="nav-img">
+                                                        <div class="title-and-description">
+                                                            <p><span class="sub-menu-product-name">XTRF Google BigQuery
+                                                                    Module</span></p>
+                                                            <p>Unleash the power of Big Data</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                        </div><!--sub-item-container-link-->
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container">
-                                    <div class="item-wrap">
-                                        <div class="sub-item-box">
-                                            <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
-                                            <div class="title-and-description">
-                                                <p><span class="sub-menu-product-name">Product Tours</span></p>
-                                                <p>Discover and interact with our products</p>
-                                            </div>
-                                        </div>
-                                        <div class="nav-img-box">
-                                            <div class="nav-img-big"><img src="./assets/imgs/nav-img-pc.png"
-                                                    alt="working image"></div>
-                                            <button><a href="#">Learn More <span
-                                                        class="nav-arrow">&rarr;</span></a></button>
-                                        </div>
-                                    </div>
-                                </div><!--sub-item-container-->
-                            </li><!--sub-item-wrap-->
-                        </ul>
-                    </li><!--li class="menu" -->
-                    <li class="menu">
-                        <div class="nav-main-container"><a href="#" class="main main-line">Solutions</a><span
-                                class="arrow-under"></span></div>
-                        <ul class="sub-menu">
-                            <li class="sub-item-wrap"><!--flex-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div class="hover-nav">
-                                                    <a href="#">
-                                                        <p><span class="sub-menu-product-name main-name">What Is a
-                                                                Translation
-                                                                Management
-                                                                System?</span>
-                                                        </p>
-                                                    </a>
-                                                    <p>Discover everything you need to know about a Translation
-                                                        Management
-                                                        System
-                                                        with our comprehensive guide</p>
+                                                </a>
+                                            </div><!--sub-item-container-link-->
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container">
+                                        <div class="item-wrap">
+                                            <div class="sub-item-box">
+                                                <img src="./assets/imgs/x.png" alt="product logo" class="nav-img">
+                                                <div class="title-and-description">
+                                                    <p><span class="sub-menu-product-name">Product Tours</span></p>
+                                                    <p>Discover and interact with our products</p>
                                                 </div>
                                             </div>
                                             <div class="nav-img-box">
-                                                <div class="nav-img-big img-margin-r"><img
-                                                        src="./assets/imgs/nav-img-pc.png" alt="working image"></div>
-                                                <div>
-                                                    <p>Do you know what is a Translation Management System and how it
-                                                        can
-                                                        help you?</p>
-                                                    <button><a href="#">Learn More <span
-                                                                class="nav-arrow">&rarr;</span></a></button>
-                                                </div>
+                                                <div class="nav-img-big"><img src="./assets/imgs/nav-img-pc.png"
+                                                        alt="working image"></div>
+                                                <button><a href="#">Learn More <span
+                                                            class="nav-arrow">&rarr;</span></a></button>
                                             </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Industries</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name">Roles</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div><!--no right border-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Use Cases</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                            </li>
-                        </ul>
-
-                    <li class="menu"><!--resources-->
-                        <div class="nav-main-container"><a href="#" class="main main-line">Resources</a><span
-                                class="arrow-under"></span></div>
-                        <ul class="sub-menu">
-                            <li class="sub-item-wrap"><!--flex-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div class="hover-nav">
-                                                    <a href="#">
-                                                        <p><span class="sub-menu-product-name main-name">What Is a
-                                                                Translation
-                                                                Management
-                                                                System?</span>
-                                                        </p>
-                                                    </a>
-                                                    <p>Discover everything you need to know about a Translation
-                                                        Management
-                                                        System
-                                                        with our comprehensive guide</p>
-                                                </div>
-                                            </div>
-                                            <div class="nav-img-box">
-                                                <div class="nav-img-big img-margin-r"><img
-                                                        src="./assets/imgs/nav-img-pc.png" alt="working image"></div>
-                                                <div>
-                                                    <p>Do you know what is a Translation Management System and how it
-                                                        can
-                                                        help you?</p>
-                                                    <button><a href="#">Learn More <span
-                                                                class="nav-arrow">&rarr;</span></a></button>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Industries</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name">Roles</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div><!--no right border-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Use Cases</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                            </li>
-                        </ul>
-
-                    <li class="menu"><!--company-->
-                        <div class="nav-main-container"><a href="#" class="main main-line">Company</a><span
-                                class="arrow-under"></span></div>
-                        <ul class="sub-menu">
-                            <li class="sub-item-wrap"><!--flex-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Company</span>
-                                                    <p>
-                                                    <p>Learn about who are and the servers we offer</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="hover-nav underline-a">
-                                            <a href="#" class="nav-sub-item-listed">About Us</a>
-                                            <a href="#" class="nav-sub-item-listed">Careers</a>
-                                            <a href="#" class="nav-sub-item-listed">MACH Localization</a>
                                         </div>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Industries</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span
-                                                            class="sub-menu-product-name main-name main-name">Roles</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                            </li><!--sub-item-wrap-->
-                        </ul><!--sub-menu-->
-                    </li><!--menu-->
-
-                    <li class="menu"><!--company-->
-                        <div class="nav-main-container"><a href="#" class="main main-line">Get Started</a><span
-                                class="arrow-under"></span></div>
-                        <ul class="sub-menu">
-                            <li class="sub-item-wrap"><!--flex-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <a href="#">
-                                                        <p class="title-nav-a"><span
-                                                                class="sub-menu-product-name hover-nav">What Is a
-                                                                Translation
-                                                                Management
-                                                                System?</span>
-                                                        </p>
+                                    </div><!--sub-item-container-->
+                                </li><!--sub-item-wrap-->
+                            </ul>
+                        </li><!--li class="menu" -->
+                        <li class="menu">
+                            <div class="nav-main-container"><a href="#" class="main main-line"> <input type="checkbox"
+                                        id="menu-section-2" class="menu-section-2" />
+                                    <label for="menu-section-2" class="menu-label">Solutions</label></a><span
+                                    class="arrow-under"></span></div>
+                            <ul class="sub-menu">
+                                <li class="sub-item-wrap"><!--flex-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div class="hover-nav">
+                                                        <a href="#">
+                                                            <p><span class="sub-menu-product-name main-name">2kome What
+                                                                    Is a
+                                                                    Translation
+                                                                    Management
+                                                                    System?</span>
+                                                            </p>
+                                                        </a>
                                                         <p>Discover everything you need to know about a Translation
                                                             Management
                                                             System
                                                             with our comprehensive guide</p>
-                                                    </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="nav-img-box">
-                                                <div class="nav-img-big img-margin-r"><img
-                                                        src="./assets/imgs/nav-img-pc.png" alt="working image"></div>
-                                                <div>
-                                                    <p>Do you know what is a Translation Management System and how it
-                                                        can
-                                                        help you?</p>
-                                                    <button><a href="#">Learn More <span
-                                                                class="nav-arrow">&rarr;</span></a></button>
+                                                <div class="nav-img-box">
+                                                    <div class="nav-img-big img-margin-r"><img
+                                                            src="./assets/imgs/nav-img-pc.png" alt="working image">
+                                                    </div>
+                                                    <div>
+                                                        <p>Do you know what is a Translation Management System and how
+                                                            it
+                                                            can
+                                                            help you?</p>
+                                                        <button><a href="#">Learn More <span
+                                                                    class="nav-arrow">&rarr;</span></a></button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Industries</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span
+                                                                class="sub-menu-product-name main-name">Industries</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                                <div class="sub-item-container"><!--border-right-->
-                                    <div class="item-wrap">
-                                        <a href="#">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
-                                                <div>
-                                                    <p><span class="sub-menu-product-name main-name">Roles</span>
-                                                    <p>
-                                                    <p>Leading language Technology tailored to all industries</p>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span class="sub-menu-product-name">Roles</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div><!--item-wrap-->
-                                </div><!--sub-item-container-->
-                            </li><!--sub-item-wrap-->
-                        </ul><!--sub-menu-->
-                    </li><!--menu-->
-                </ul><!--top-nav-->
-            </nav>
-            <div class="header-right">
-                <a href="#" class="nav-demo nav-r-btn">Request a Demo</a>
-                <a href="#" class="nav-log-in nav-r-btn">Login</a>
-                <div class="lang-menu-wrap">
-                    <ul class="lang-lists">
-                        <li class="lang-item">
-                            <a href="#" class="nav-r-btn">EN</a>
-                            <ul class="lang-drpdwn-list">
-                                <li class="lang-drp-item"><a href="#">EN</a></li>
-                                <li class="lang-drp-item"><a href="#">日本語</a></li>
-                                <li class="lang-drp-item"><a href="#">language</a></li>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div><!--no right border-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span class="sub-menu-product-name main-name">Use
+                                                                Cases</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+
+                        <li class="menu"><!--resources-->
+                            <div class="nav-main-container"><a href="#" class="main main-line"><input type="checkbox"
+                                        id="menu-section-3" class="menu-section-3" />
+                                    <label for="menu-section-3" class="menu-label">Resources</label></a><span
+                                    class="arrow-under"></span></div>
+                            <ul class="sub-menu i-3">
+                                <li class="sub-item-wrap"><!--flex-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div class="hover-nav">
+                                                        <a href="#">
+                                                            <p><span class="sub-menu-product-name main-name">What Is a
+                                                                    Translation
+                                                                    Management
+                                                                    System?</span>
+                                                            </p>
+                                                        </a>
+                                                        <p>Discover everything you need to know about a Translation
+                                                            Management
+                                                            System
+                                                            with our comprehensive guide</p>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-img-box">
+                                                    <div class="nav-img-big img-margin-r"><img
+                                                            src="./assets/imgs/nav-img-pc.png" alt="working image">
+                                                    </div>
+                                                    <div>
+                                                        <p>Do you know what is a Translation Management System and how
+                                                            it
+                                                            can
+                                                            help you?</p>
+                                                        <button><a href="#">Learn More <span
+                                                                    class="nav-arrow">&rarr;</span></a></button>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span
+                                                                class="sub-menu-product-name main-name">Industries</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span class="sub-menu-product-name">Roles</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div><!--no right border-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span class="sub-menu-product-name main-name">Use
+                                                                Cases</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                </li>
+                            </ul>
+
+                        <li class="menu"><!--company-->
+                            <div class="nav-main-container"><a href="#" class="main main-line"><input type="checkbox"
+                                        id="menu-section-4" class="menu-section-4" />
+                                    <label for="menu-section-4" class="menu-label">Company</label></a><span
+                                    class="arrow-under"></span></div>
+                            <ul class="sub-menu i-4">
+                                <li class="sub-item-wrap"><!--flex-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span class="sub-menu-product-name main-name">Company</span>
+                                                        <p>
+                                                        <p>Learn about who are and the servers we offer</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="hover-nav underline-a">
+                                                <a href="#" class="nav-sub-item-listed">About Us</a>
+                                                <a href="#" class="nav-sub-item-listed">Careers</a>
+                                                <a href="#" class="nav-sub-item-listed">MACH Localization</a>
+                                            </div>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span
+                                                                class="sub-menu-product-name main-name">Industries</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span
+                                                                class="sub-menu-product-name main-name main-name">Roles</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                </li><!--sub-item-wrap-->
+                            </ul><!--sub-menu-->
+                        </li><!--menu-->
+
+                        <li class="menu"><!--company-->
+                            <div class="nav-main-container"><a href="#" class="main main-line"><input type="checkbox"
+                                        id="menu-section-5" class="menu-section-5" />
+                                    <label for="menu-section-5" class="menu-label">Get Started</label></a><span
+                                    class="arrow-under"></span></div>
+                            <ul class="sub-menu i-5">
+                                <li class="sub-item-wrap"><!--flex-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <a href="#">
+                                                            <p class="title-nav-a"><span
+                                                                    class="sub-menu-product-name hover-nav">What Is a
+                                                                    Translation
+                                                                    Management
+                                                                    System?</span>
+                                                            </p>
+                                                            <p>Discover everything you need to know about a Translation
+                                                                Management
+                                                                System
+                                                                with our comprehensive guide</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-img-box">
+                                                    <div class="nav-img-big img-margin-r"><img
+                                                            src="./assets/imgs/nav-img-pc.png" alt="working image">
+                                                    </div>
+                                                    <div>
+                                                        <p>Do you know what is a Translation Management System and how
+                                                            it
+                                                            can
+                                                            help you?</p>
+                                                        <button><a href="#">Learn More <span
+                                                                    class="nav-arrow">&rarr;</span></a></button>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span
+                                                                class="sub-menu-product-name main-name">Industries</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                    <div class="sub-item-container"><!--border-right-->
+                                        <div class="item-wrap">
+                                            <a href="#">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.png" alt="question" class="nav-icon">
+                                                    <div>
+                                                        <p><span class="sub-menu-product-name main-name">Roles</span>
+                                                        <p>
+                                                        <p>Leading language Technology tailored to all industries</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div><!--item-wrap-->
+                                    </div><!--sub-item-container-->
+                                </li><!--sub-item-wrap-->
+                            </ul><!--sub-menu-->
+                        </li><!--menu-->
+                    </ul><!--top-nav-->
+                </nav>
+                <div class="header-right">
+                    <a href="#" class="nav-demo nav-r-btn mb-none">Request a Demo</a>
+                    <a href="#" class="nav-log-in nav-r-btn">Login</a>
+                    <div class="lang-menu-wrap">
+                        <ul class="lang-lists">
+                            <li class="lang-item">
+                                <a href="#" class="nav-r-btn">EN</a>
+                                <ul class="lang-drpdwn-list">
+                                    <li class="lang-drp-item"><a href="#">EN</a></li>
+                                    <li class="lang-drp-item"><a href="#">日本語</a></li>
+                                    <li class="lang-drp-item"><a href="#">language</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -499,10 +545,11 @@
                 <h2>Localization software that drives global growth</h2>
                 <p>Put an end to manual, disconnected, and inefficient translation processes. With the XTM <a href="#"
                         class="main-link">Translation
-                        Platform</a>, you can easily deploy your content in any language, at any time, while maintaining
+                        Platform</a>, you can easily deploy your content in any language, at any time, while
+                    maintaining
                     full
                     visibility, accuracy, and control.</p>
-                <div class="flex"><a href="#" class="main-btn-blue">Book a Demo</a>
+                <div class="flex mobile"><a href="#" class="main-btn-blue">Book a Demo</a>
                     <a href="#" class="main-btn-nocolor">Access Product Tours</a>
                 </div>
             </div>
@@ -553,10 +600,13 @@
                     <h3>Translation Business and Vendor Management
                     </h3>
                     <img src="./assets/imgs/xtrf.png" alt="xtrf image">
-                    <p>Want to elevate your project and vendor managers’ efficiency with smart automation and AI, reduce
-                        time spent on mundane tasks, and double profitability and output overnight? With XTRF by XTM,
+                    <p>Want to elevate your project and vendor managers’ efficiency with smart automation and AI,
+                        reduce
+                        time spent on mundane tasks, and double profitability and output overnight? With XTRF by
+                        XTM,
                         you
-                        can deliver more translation in less time, monitor projects and track profitability, automate
+                        can deliver more translation in less time, monitor projects and track profitability,
+                        automate
                         translation workflows, and more.</p>
                     <a href="#" class="main-btn-blue">Learn more</a>
                 </div>
@@ -565,8 +615,10 @@
                     <img src="./assets/imgs/rigi.png" alt="rigi image">
                     <p>Ready to streamline your software localization process by separating it from your development
                         efforts
-                        and leveraging dynamic visual context? With Rigi by XTM, you can accelerate agile development,
-                        empower linguists to work independently, maintain up-to-date localized documentation, and more.
+                        and leveraging dynamic visual context? With Rigi by XTM, you can accelerate agile
+                        development,
+                        empower linguists to work independently, maintain up-to-date localized documentation, and
+                        more.
                     </p>
                     <a href="#" class="main-btn-blue">Learn more</a>
                 </div>
@@ -624,13 +676,16 @@
                 <div class="step-box-content">
                     <p class="blue-badge">Localize</p>
                     <h2>Grow</h2>
-                    <p class="step-body">Localizing and deploying material across multiple regions is complex. You need
+                    <p class="step-body">Localizing and deploying material across multiple regions is complex. You
+                        need
                         localization
                         software
                         that
-                        is simple, scalable, and robust. XTM provides a translation platform that will help you deliver
+                        is simple, scalable, and robust. XTM provides a translation platform that will help you
+                        deliver
                         your
-                        content localized into multiple languages faster and more cost-effectively, allowing you to land
+                        content localized into multiple languages faster and more cost-effectively, allowing you to
+                        land
                         into
                         new markets more quickly and easily.</p>
                     <ul class="step-ul">
@@ -706,16 +761,19 @@
                     <div class="step-box-content">
                         <p class="blue-badge">Increrase efficiency</p>
                         <h2>Automate</h2>
-                        <p class="step-body">Increase your efficiency by harnessing the power of automation. With the
+                        <p class="step-body">Increase your efficiency by harnessing the power of automation. With
+                            the
                             XTM
-                            Translation Platform, you can automate manual processes, reduce costs and turnaround times,
+                            Translation Platform, you can automate manual processes, reduce costs and turnaround
+                            times,
                             and
                             enhance your content quality.</p>
                         <ul class="step-ul">
                             <li>
                                 <div class="step-div-1">
                                     <h4>Leverage Machine Translation</h4>
-                                    <p>Deploy machine translation to streamline and accelerate localization of content
+                                    <p>Deploy machine translation to streamline and accelerate localization of
+                                        content
                                         into
                                         multiple languages.</p>
                                 </div>
@@ -723,7 +781,8 @@
                             <li>
                                 <div class="step-div-1">
                                     <h4>Effortless Communication</h4>
-                                    <p>Create an effective translation management environment without unnecessary delays
+                                    <p>Create an effective translation management environment without unnecessary
+                                        delays
                                         thanks to automatic notifications and real-time communication on a single
                                         platform.
                                     </p>
@@ -749,17 +808,21 @@
                     <div class="step-box-content">
                         <p class="blue-badge">Unleash potential</p>
                         <h2>Artificial Intelligence</h2>
-                        <p class="step-body">Artificial Intelligence (AI) is now a basic need in translation technology
+                        <p class="step-body">Artificial Intelligence (AI) is now a basic need in translation
+                            technology
                             and
-                            is changing how companies gain a competitive advantage. XTM AI teaches machines how human
-                            language works, training computers to understand and recognize the nuances of human language
+                            is changing how companies gain a competitive advantage. XTM AI teaches machines how
+                            human
+                            language works, training computers to understand and recognize the nuances of human
+                            language
                             to
                             improve translation productivity.</p>
                         <ul class="step-ul">
                             <li>
                                 <div class="step-div-1">
                                     <h4>Faster Time to Market</h4>
-                                    <p>Leverage the latest AI technologies to translate your content more quickly and go
+                                    <p>Leverage the latest AI technologies to translate your content more quickly
+                                        and go
                                         to
                                         market in a fraction of the time.</p>
                                 </div>
@@ -767,7 +830,8 @@
                             <li>
                                 <div class="step-div-1">
                                     <h4>More Content + Better Content</h4>
-                                    <p>AI localization technology allows you to increase your content output with the
+                                    <p>AI localization technology allows you to increase your content output with
+                                        the
                                         same
                                         resources and time, which means better quality and happier customers.
                                     </p>
@@ -776,7 +840,8 @@
                             <li>
                                 <div class="step-div-1">
                                     <h4>Embrace the Future</h4>
-                                    <p>XTM’s features enable you to harness the full power of AI for your translations
+                                    <p>XTM’s features enable you to harness the full power of AI for your
+                                        translations
                                         and
                                         leverage the technology of the future, today.</p>
                                 </div>
@@ -876,7 +941,8 @@
         <section id="connect">
             <h2>XTM Connect</h2>
             <p>Save time, cut down on excessive email communication, and reduce manual actions using XTM connectors.
-                Integrate XTM Cloud with your existing content systems, and other solutions to streamline and automate
+                Integrate XTM Cloud with your existing content systems, and other solutions to streamline and
+                automate
                 the localization workflow.</p>
             <div class="connect-item-wrap">
                 <ul class="connect-list flex">
@@ -1038,6 +1104,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

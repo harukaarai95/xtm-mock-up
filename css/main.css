@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6em; /*16px*/
 }
 
 :root {
@@ -54,6 +54,13 @@ h1 img {
   width: 5em;
 }
 
+.header-wrapper {
+  position: sticky;
+  position: -webkit-sticky; /*for safari*/
+  top: 0;
+  border-bottom: solid 1px var(--gray-f);
+  z-index: 800;
+}
 header {
   display: flex;
   height: 10rem;
@@ -61,6 +68,26 @@ header {
   justify-content: space-between;
   align-content: center;
   padding: 0 5%;
+}
+.header-wrapper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h1 {
+  display: flex;
+  align-items: center;
+}
+.wrap-navi {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.mobile-menu {
+  display: none; /* Hide the hamburger menu on desktop */
+}
+.global-menu {
+  display: block; /* Show the global menu */
 }
 /*NAVIGATION*/
 nav {
@@ -121,6 +148,10 @@ nav {
 .main {
   margin-right: 1.8em;
 }
+/*Hamburger menu*/
+#checkbox-label {
+  cursor: pointer;
+}
 /*under arrow mark*/
 .nav-main-container {
   display: inline-flex;
@@ -157,8 +188,7 @@ nav {
 }
 /******************************/
 .top-nav {
-  margin-top: calc(10rem - 1.2rem);
-  padding: 0 5%;
+  margin: 3.5rem auto;
 }
 .sub-menu {
   width: 100vw;
@@ -170,8 +200,8 @@ nav {
   background-color: white;
   border-top: solid 2px var(--gray);
   visibility: hidden; /************tukeru***********************/
-  transform: translateX(-20.25rem); /*横軸を親要素からずらす*/
-  transition: all 0.5s;
+  transform: translateX(-43.5rem); /*横軸を親要素からずらす*/
+  transition: all 0.3s ease;
 }
 
 .item-wrap p {
@@ -552,7 +582,7 @@ nav .title-nav-a {
   white-space: nowrap;
   width: 100%; /*--------------*/
   height: 14rem;
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin-bottom: 3rem;
 }
 
@@ -873,6 +903,9 @@ nav .title-nav-a {
   max-width: 50%;
 }*/
 /***********************************/
+.card {
+  z-index: 0;
+}
 #testmonials {
   background-color: var(--light-blue);
 }
