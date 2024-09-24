@@ -103,7 +103,7 @@ nav {
 
 .menu {
   margin-right: 0.5em;
-  height: 10rem; /*navと同じ高さにするとホバーいい感じ*/
+  height: 1.6rem; /*navと同じ高さにするとホバーいい感じ*/
 }
 .global-menu {
   /**********/
@@ -132,7 +132,7 @@ nav {
   position: absolute;
   width: 0;
   height: 2px;
-  left: 0;
+  left: 12px;
   bottom: -2px;
   background-color: var(--blue);
   transition: width 0.4s;
@@ -192,9 +192,12 @@ nav {
 /******************************/
 .top-nav {
   margin: 3.5rem auto;
+  display: flex; /********************************************/
+  align-items: center; /**************************************/
 }
 .sub-menu {
   width: 100vw;
+  height: auto;
   position: absolute;
   top: 100%;
   right: 0;

@@ -88,7 +88,7 @@
     margin: 0;
     padding: 0;
   }
-  .top-nav .logo {
+  .top-nav.logo {
     width: 120px;
     margin: 3rem auto;
   }
@@ -140,6 +140,11 @@
   /**********************************/
   .menu {
     position: relative; /* Ensure the parent has position relative */
+    right: 0.5em;
+    height: 10rem;
+  }
+  .menu li {
+    margin: 1rem;
   }
   ul {
     padding: 0;
