@@ -300,6 +300,33 @@
   .action-wrap img {
     margin-top: 3rem;
   }
+  /******** contact ************/
+  .all-contact {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contact-comment-p {
+    font-size: 2.5rem;
+  }
+  .form-wrap {
+    width: 100%;
+  }
+  .contact-form {
+    grid-template-rows: repeat(4, 1fr) repeat(2, 2rem);
+    grid-template-columns: repeat(2, 48%);
+  }
+  .contact-comment-box {
+    width: 100%;
+  }
+  .subscribe label,
+  .agree label {
+    font-size: 1.8rem;
+  }
+  .contact-p {
+    font-size: 1.8rem;
+  }
 }
 
 /****************** mobile ********************/

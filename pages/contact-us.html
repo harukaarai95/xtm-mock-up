@@ -546,54 +546,167 @@
     </div><!--header-wrapper end-->
     <main>
         <section id="contact">
-            <div class="contact-container">
-                <h1>Contact Us</h1>
-                <p>Have any questions? Would you like to send us your feedback? Fill in the form below and we'll get
-                    back to
-                    you as soon as possible.</p>
-                <div class="form-wrap">
-                    <form action="submit-example" method="post" name="form">
-                        <div>
-                            <label for="poc">Who would you like to contact?*</label>
-                            <select id="poc" name="contact of person" required>
-                                <option value="">Please Select</option>
-                                <option value="general">Sales</option>
-                                <option value="support">The Partner Team</option>
-                                <option value="feedback">Support</option>
-                                <option value="other">Marketing</option>
-                            </select>
+            <div class="bg">
+                <div class="bg-wrap">
+                    <h1>Contact Us</h1>
+                    <p class="contact-p">Have any questions? Would you like to send us your feedback? Fill in the form
+                        below
+                        and we'll get
+                        back to
+                        you as soon as possible.</p>
+                    <div class="all-contact">
+                        <div class="contact-container">
+                            <div class="form-wrap">
+                                <form action="submit-example" method="post" class="contact-form">
+                                    <div class="poc">
+                                        <label for="poc" class="astarisk">Who would you like to contact?</label>
+                                        <select id="poc" name="contact-of-person" required>
+                                            <option value="">Please Select</option>
+                                            <option value="sales">Sales</option>
+                                            <option value="partnet">The Partner Team</option>
+                                            <option value="support">Support</option>
+                                            <option value="marketing">Marketing</option>
+                                        </select>
+                                    </div>
+                                    <div class="firstname">
+                                        <label for="first-name" class="astarisk">First name</label>
+                                        <input type="text" id="first-name" name="firstname" required>
+                                    </div>
+                                    <div class="lastname">
+                                        <label for="last-name" class="astarisk">Last name</label>
+                                        <input type="text" id="last-name" name="lastname" required>
+                                    </div>
+                                    <div class="email">
+                                        <label for="email" class="astarisk">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="interest">
+                                        <label for="interest">Primary area of interest</label>
+                                        <select id="interest" name="interest-area">
+                                            <option value="">Please Select</option>
+                                            <option value="cloud">Sales</option>
+                                            <option value="support">The Partner Team</option>
+                                            <option value="feedback">Support</option>
+                                            <option value="other">Marketing</option>
+                                        </select>
+                                    </div>
+                                    <div class="message">
+                                        <label for="message" class="astarisk">Comments</label>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </div>
+                                    <div class="subscribe">
+                                        <input type="checkbox" id="subscribe" name="subscribe">
+                                        <label for="subscribe">Subscribe to the XTM newsletter.</label>
+                                    </div>
+                                    <div class="agree">
+                                        <input type="checkbox" id="agree" name="agree">
+                                        <label for="agree">I agree to the <a href="#">Privacy Poliscy</a></label>
+                                    </div>
+                                    <div class="form-btn-wrp"><button type="submit"
+                                            class="submit-btn main-btn-blue">Submit</button>
+                                    </div>
+                                </form>
+                            </div><!--form-wrap-->
+                        </div><!--contact container-->
+                        <div class="right-wrap-contact">
+                            <div class="contact-comment-box">
+                                <p class="contact-comment-p">With XTM Cloud, we can now offer all customers across the
+                                    world
+                                    the
+                                    same
+                                    level of support and access
+                                    to every new product we launch more quickly while reducing costs and errors, and
+                                    ensuring
+                                    consistency across all content.</p>
+                                <div class="comment-box-item"><img src="../assets/imgs/man.jpg"
+                                        alt="a person at position of VP of content">
+                                    <div>
+                                        <p><strong>Jonh Smith</strong></p>
+                                        <p>VP of Content, <a href="#">RS Group</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trust-container">
+                                <p>Trusted by hundreds of leading global companies</p>
+                                <div class="trust"><img src="../assets/logo/logo-a.png">
+                                    <img src="../assets/logo/logo-b.png">
+                                    <img src="../assets/logo/logo-c.png">
+                                </div>
+                                <p>Consistently rated highly by our users</p>
+                                <div class="star-w"><img src="../assets/imgs/star.png" alt="stars" class="stars"></div>
+                            </div>
                         </div>
-                        <div>
-                            <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="first name" required>
-                        </div>
-                        <div>
-                            <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="last name" required>
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div>
-                            <label for="interest">Please Select</label>
-                            <select id="interest" name="interest area">
-                                <option value="">Please Select</option>
-                                <option value="cloud">Sales</option>
-                                <option value="support">The Partner Team</option>
-                                <option value="feedback">Support</option>
-                                <option value="other">Marketing</option>
-                            </select>
-                        </div>
-                    </form>
+                    </div><!--all contact-->
                 </div>
             </div>
-
         </section>
     </main>
 
-    <body>
+    <footer>
+        <div class="flex footer-wrap">
+            <div class="foot-1">
+                <a href="#"><img src="../assets/logo/logo.png" alt="xtm" class="foot-logo"></a>
+                <p><strong>XTM International</strong></p>
+                <p class="f-address">Cannon Green<br>
+                    27 Bush Lane<br>
+                    London EC4R 0AA<br>
+                    United Kingdom</p>
 
-    </body>
+                <div class="follow">
+                    <p><strong>Follow</strong></p>
+                    <div>
+                        <a hef="#"><img src="../assets/imgs/linkedin.png" alt="linkedin" class="f-follow-1"></a>
+                        <a hef="#"><img src="../assets/imgs/twitter.png" alt="x"></a>
+                        <a hef="#"><img src="../assets/imgs/facebookpng.png" alt="facebook"></a>
+                        <a hef="#"><img src="../assets/imgs/youtube.png" alt="youtube"></a>
+                    </div>
+                    <p class="copyright">&copy; 2024 XTM International</p>
+                </div>
+            </div>
+            <div class="footer-nav-list">
+                <ul class="footer-nav">
+                    <li class="foot-li-title"><strong>Product</strong></li>
+                    <li><a href="#" class="text-decoration-none">Artificial Intelligence</a></li>
+                    <li><a href="#" class="text-decoration-none">AI-enhanced TM</a></li>
+                    <li><a href="#" class="text-decoration-none">XTM Connect</a></li>
+                    <li><a href="#" class="text-decoration-none">Integrations</a></li>
+                    <li><a href="#" class="text-decoration-none">Industries</a></li>
+                    <li><a href="#" class="text-decoration-none">Whar Is a TMS?</a></li>
+                </ul>
+
+                <ul class="footer-nav">
+                    <li class="foot-li-title"><strong>Resources</strong></li>
+                    <li><a href="#" class="text-decoration-none">Resources Center</a></li>
+                    <li><a href="#" class="text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-decoration-none">XTM Insights</a></li>
+                    <li><a href="#" class="text-decoration-none">Success Stories</a></li>
+                    <li><a href="#" class="text-decoration-none">Webinars</a></li>
+                    <li><a href="#" class="text-decoration-none">Documentation</a></li>
+                    <li><a href="#" class="text-decoration-none">Release Notes</a></li>
+                </ul>
+
+                <ul class="footer-nav">
+                    <li class="foot-li-title"><strong>Company</strong></li>
+                    <li><a href="#" class="text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="text-decoration-none">Partners</a></li>
+                    <li><a href="#" class="text-decoration-none">Support</a></li>
+                    <li><a href="#" class="text-decoration-none">Privacy and Cookies Policy</a></li>
+                    <li><a href="#" class="text-decoration-none">Security & Trust Center</a></li>
+                </ul>
+
+                <ul class="footer-nav">
+                    <li class="foot-li-title"><strong>Get Started</strong></li>
+                    <li><a href="#" class="text-decoration-none">Try XTM Cloud for free</a></li>
+                    <li><a href="#" class="text-decoration-none">Request a Demo</a></li>
+                    <li><a href="#" class="text-decoration-none">Pricing</a></li>
+                    <li><a href="#" class="text-decoration-none">Buy XTM Cloud</a></li>
+                    <li><a href="#" class="text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
 
 </html>
