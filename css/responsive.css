@@ -327,6 +327,18 @@
   .contact-p {
     font-size: 1.8rem;
   }
+  /**************** about *****************/
+  .about-main {
+    width: 80%;
+  }
+  .about-main p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .p-2 img {
+    width: 20rem;
+  }
 }
 
 /****************** mobile ********************/

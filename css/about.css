@@ -1,0 +1,145 @@
+h2 {
+  font-size: 5.8rem;
+  text-align: center;
+}
+
+.about-main {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: 130rem;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 4.2rem;
+  color: var(--navy);
+  margin-top: 5rem;
+}
+
+.p-2 {
+  display: flex;
+  margin: 7rem 0;
+  justify-content: center;
+}
+
+.separater {
+  display: block;
+  width: 100vw;
+  height: 33.5rem;
+  background-image: url(../assets/imgs/connectivity-city-device.png);
+}
+#mission-vision {
+  background-color: var(--light-blue);
+  padding: 3rem 5%;
+}
+#mission-vision img {
+  object-fit: contain;
+}
+#mission-vision h3,
+#glance h3,
+#core h3,
+#career h3 {
+  font-size: 3.4rem;
+}
+#mission-vision p,
+#glance p {
+  font-size: 1.8rem;
+}
+#mission-vision.mission-vision {
+  gap: 1rem;
+}
+#glance {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: var(--pale-yellow);
+}
+#glance p {
+  color: var(--navy);
+}
+#glance img {
+  width: 36px;
+  height: 36px;
+}
+.gl-items {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin: 2rem;
+}
+
+summary {
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+  border-bottom: solid 1px var(--dark-gray);
+}
+details {
+  transition: 1s;
+  height: 5rem;
+}
+summary::-webkit-details-marker {
+  display: none; /*Safari*/
+}
+details[open] {
+  height: 9rem;
+}
+details[open] p {
+  margin: 5px 0;
+  padding: 10px;
+  opacity: 1;
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+.icon {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-right: 1px solid var(--dark-gray);
+  border-bottom: 1px solid var(--dark-gray);
+  position: absolute;
+  right: 0;
+  top: 5px;
+  z-index: 10;
+  transform: rotate(45deg) translateX(-30%) translateY(20%);
+}
+
+details[open] .icon {
+  transform: rotate(-135deg) translateX(-15%) translateY(-55%);
+}
+
+#core h3 {
+  text-align: center;
+}
+.qa-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#core {
+  background-color: var(--light-blue);
+}
+
+#career {
+  background: #f4e0f6;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.btn-c {
+  background-color: black;
+  color: #f4e0f6;
+  border-radius: 1.5rem;
+  border: none;
+  display: block;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 20rem;
+  margin: 3rem auto;
+}
+#career p {
+  margin-top: 2rem;
+}
