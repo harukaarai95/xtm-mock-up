@@ -1059,8 +1059,8 @@ input[type="checkbox"] {
 /*gallery*/
 .connect-1.gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16%, 5fr));
-  grid-template-rows: repeat(3, 5rem);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
   gap: 5%;
   margin: 0 5%;
   justify-content: center;
@@ -1069,10 +1069,6 @@ input[type="checkbox"] {
   object-fit: contain;
   width: 100%;
   height: 100%;
-}
-.gallery .logo-k {
-  grid-column: 1 / 6; /* the entire width */
-  justify-self: center;
 }
 .connect-bottom-btn {
   justify-content: center;

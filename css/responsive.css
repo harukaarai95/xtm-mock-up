@@ -348,6 +348,11 @@
     width: 28rem;
     margin: 3rem auto;
   }
+  .connect-1.gallery {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+  }
 }
 /****************** mobile ********************/
 @media screen and (max-width: 767px) {
@@ -438,7 +443,7 @@
   #action .main-btn-blue {
     width: 22rem;
     position: absolute;
-    top: 15rem;
+    top: 23rem;
     right: 0;
   }
   /*******************/
@@ -491,5 +496,8 @@
   }
   .glance-wrap {
     width: 80%;
+  }
+  #connect .connect-bottom-btn {
+    margin: 8rem;
   }
 }
