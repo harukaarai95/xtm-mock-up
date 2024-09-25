@@ -28,17 +28,19 @@
         <header>
             <div class="wrap-navi">
                 <div class="mobile-menu"><input type="checkbox" id="checkbox" aria-label="Toggle navigation menu"
-                        aria-labelledby="nav-label" aria-controls="nav-menu" aria-expanded="false">
+                        aria-labelledby="nav-label" aria-controls="nav-menu" aria-expanded="false" role="navagation">
                     <label for="checkbox" id="checkbox-label" role="button">
                     </label>
                 </div>
-                <nav role="navigation" class="global-menu tab">
+                <nav class="global-menu tab">
                     <ul class="top-nav">
                         <li class="menu">
-                            <div class="nav-main-container"><a href="/pages/404.html" class="main main-line">
-                                    <input type="checkbox" id="menu-section-1" class="menu-section-1" />
-                                    <label for="menu-section-1" class="menu-label first-item">Products</label></a><span
-                                    class="arrow-under"></span></div>
+                            <div class="nav-main-container">
+                                <input type="checkbox" id="menu-section-1" class="menu-section-1" role="navagation"><a
+                                    href="/pages/404.html" class="main main-line"></a>
+                                <label for="menu-section-1" class="menu-label first-item">Products</label></a><span
+                                    class="arrow-under"></span>
+                            </div>
                             <ul class="sub-menu">
                                 <li class="sub-item-wrap">
                                     <div class="sub-item-container">
@@ -197,7 +199,7 @@
                         </li><!--li class="menu" -->
                         <li class="menu">
                             <div class="nav-main-container"><a href="/pages/404.html" class="main main-line"> <input
-                                        type="checkbox" id="menu-section-2" class="menu-section-2" />
+                                        type="checkbox" id="menu-section-2" class="menu-section-2" role="navagation">
                                     <label for="menu-section-2" class="menu-label">Solutions</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu">
@@ -287,7 +289,7 @@
 
                         <li class="menu"><!--resources-->
                             <div class="nav-main-container"><a href="/pages/404.html" class="main main-line"><input
-                                        type="checkbox" id="menu-section-3" class="menu-section-3" />
+                                        type="checkbox" id="menu-section-3" class="menu-section-3" role="navagation">
                                     <label for="menu-section-3" class="menu-label">Resources</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-3">
@@ -376,7 +378,7 @@
 
                         <li class="menu"><!--company-->
                             <div class="nav-main-container"><a href="/pages/404.html" class="main main-line"><input
-                                        type="checkbox" id="menu-section-4" class="menu-section-4" />
+                                        type="checkbox" id="menu-section-4" class="menu-section-4" role="navagation">
                                     <label for="menu-section-4" class="menu-label">Company</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-4">
@@ -437,7 +439,7 @@
 
                         <li class="menu"><!--company-->
                             <div class="nav-main-container"><a href="/pages/404.html" class="main main-line"><input
-                                        type="checkbox" id="menu-section-5" class="menu-section-5" />
+                                        type="checkbox" id="menu-section-5" class="menu-section-5" role="navagation">
                                     <label for="menu-section-5" class="menu-label">Get Started</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-5">
@@ -634,7 +636,7 @@
                 <ul>
                     <li>
                         <label class="radio-step" for="step-1">
-                            <input type="radio" class="radio-s" id="step-1" name="steps" checked>
+                            <input type="radio" class="radio-s" id="step-1" name="steps" checked role="navagation">
                             <div class="step-box-1">
                                 <div class="step-box-item">
                                     <p class="step-p-1">GROW</p>
@@ -645,7 +647,7 @@
                     </li>
                     <li>
                         <label class="radio-step" for="step-2">
-                            <input type="radio" class="radio-s" id="step-2" name="steps">
+                            <input type="radio" class="radio-s" id="step-2" name="steps" role="navagation">
                             <div class="step-box-2">
                                 <div class="step-box-item-2">
                                     <p class="step-p-01">CONNECT</p>
@@ -656,7 +658,7 @@
                     </li>
                     <li>
                         <label class="radio-step" for="step-3">
-                            <input type="radio" class="radio-s" id="step-3" name="steps">
+                            <input type="radio" class="radio-s" id="step-3" name="steps" role="navagation">
                             <div class="step-box-3">
                                 <div class="step-box-item-3">
                                     <p class="step-p-001">AUTOMATE</p>
@@ -667,7 +669,7 @@
                     </li>
                     <li>
                         <label class="radio-step" for="step-4">
-                            <input type="radio" class="radio-s" id="step-4" name="steps">
+                            <input type="radio" class="radio-s" id="step-4" name="steps" role="navagation">
                             <div class="step-box-4">
                                 <div class="step-box-item-4">
                                     <p class="step-p-0001">LEVARAGE AI</p>
@@ -874,40 +876,47 @@
                     <ul class="connect-list flex">
                         <li>
                             <label class="radio-connect" for="radio-1">
-                                <input type="radio" class="c-radio__input" id="radio-1" name="sample" value="1" checked>
+                                <input type="radio" class="c-radio__input" id="radio-1" name="sample" value="1" checked
+                                    role="navagation">
                                 <span class="connect-underline">CMS</span>
                             </label>
 
                         </li>
                         <li>
                             <label class="radio-connect" for="radio-2">
-                                <input type="radio" class="c-radio__input" name="sample" id="radio-2" value="2">
+                                <input type="radio" class="c-radio__input" name="sample" id="radio-2" value="2"
+                                    role="navagation">
                                 <span class="connect-underline">Marketing Automation</span>
                             </label>
                         </li>
                         <li><label class="radio-connect" for="radio-3">
-                                <input type="radio" class="c-radio__input" name="sample" id="radio-3" value="2">
+                                <input type="radio" class="c-radio__input" name="sample" id="radio-3" value="2"
+                                    role="navagation">
                                 <span class="connect-underline">Ecommerce &amp; PIM</span>
                             </label>
                         </li>
                         <li><label class="radio-connect" for="radio-4">
-                                <input type="radio" class="c-radio__input" id="radio-4" name="sample" value="2">
+                                <input type="radio" class="c-radio__input" id="radio-4" name="sample" value="2"
+                                    role="navagation">
                                 <span class="connect-underline">CCMS</span>
                             </label>
                         </li>
                         <li><label class="radio-connect" for="radio-5">
-                                <input type="radio" class="c-radio__input" id="radio-5" name="sample" value="2">
+                                <input type="radio" class="c-radio__input" id="radio-5" name="sample" value="2"
+                                    role="navagation">
                                 <span class="connect-underline">Design and Business Tools</span>
                             </label>
                         </li>
                         <li><label class="radio-connect" for="radio-6">
-                                <input type="radio" class="c-radio__input" id="radio-6" name="sample" value="2">
+                                <input type="radio" class="c-radio__input" id="radio-6" name="sample" value="2"
+                                    role="navagation">
                                 <span class="connect-underline">Customer Support</span>
                             </label>
                         </li>
 
                         <li><label class="radio-connect" for="radio-7">
-                                <input type="radio" class="c-radio__input" id="radio-7" name="sample" value="2">
+                                <input type="radio" class="c-radio__input" id="radio-7" name="sample" value="2"
+                                    role="navagation">
                                 <span class="connect-underline">Developer Tools</span>
                             </label>
                         </li>
