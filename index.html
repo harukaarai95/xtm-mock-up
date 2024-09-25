@@ -23,24 +23,22 @@
 </head>
 
 <body>
-    <h1><img src="./assets/logo/logo.svg" alt="XTM logo" class="logo"></h1>
+    <h1><a href="../index.html"><img src="./assets/logo/logo.svg" alt="XTM logo" class="logo"></a></h1>
     <div class="header-wrapper">
         <header>
             <div class="wrap-navi">
                 <div class="mobile-menu"><input type="checkbox" id="checkbox" aria-label="Toggle navigation menu"
                         aria-labelledby="nav-label" aria-controls="nav-menu" aria-expanded="false">
-                    <label for="checkbox" id="checkbox-label">
+                    <label for="checkbox" id="checkbox-label" role="button">
                     </label>
                 </div>
-                <nav class="global-menu tab">
+                <nav role="navigation" class="global-menu tab">
                     <ul class="top-nav">
                         <li class="menu">
-                            <div class="nav-main-container">
-                                <input type="checkbox" id="menu-section-1" class="menu-section-1"><a
-                                    href="/pages/404.html" class="main main-line"></a>
-                                <label for="menu-section-1" class="menu-label first-item">Products</label><span
-                                    class="arrow-under"></span>
-                            </div>
+                            <div class="nav-main-container"><a href="./pages/404.html" class="main main-line">
+                                    <input type="checkbox" id="menu-section-1" class="menu-section-1" />
+                                    <label for="menu-section-1" class="menu-label first-item">Products</label></a><span
+                                    class="arrow-under"></span></div>
                             <ul class="sub-menu">
                                 <li class="sub-item-wrap">
                                     <div class="sub-item-container">
@@ -189,8 +187,8 @@
                                             <div class="nav-img-box">
                                                 <div class="nav-img-big"><img src="./assets/imgs/nav-img-pc.webp"
                                                         alt="working image"></div>
-                                                <a href="./pages/404.html">Learn More <span
-                                                        class="nav-arrow">&rarr;</span></a>
+                                                <button><a href="./pages/404.html">Learn More <span
+                                                            class="nav-arrow">&rarr;</span></a></button>
                                             </div>
                                         </div>
                                     </div><!--sub-item-container-->
@@ -198,44 +196,46 @@
                             </ul>
                         </li><!--li class="menu" -->
                         <li class="menu">
-                            <div class="nav-main-container"><input type="checkbox" id="menu-section-2"
-                                    class="menu-section-2">
-                                <label for="menu-section-2" class="menu-label"><a href="./pages/404.html"
-                                        class="main main-line"></a></label><span class="arrow-under"></span>
-                            </div>
+                            <div class="nav-main-container"><a href="./pages/404.html" class="main main-line"> <input
+                                        type="checkbox" id="menu-section-2" class="menu-section-2" />
+                                    <label for="menu-section-2" class="menu-label">Solutions</label></a><span
+                                    class="arrow-under"></span></div>
                             <ul class="sub-menu">
                                 <li class="sub-item-wrap"><!--flex-->
                                     <div class="sub-item-container"><!--border-right-->
                                         <div class="item-wrap">
-                                            <div class="flex">
-                                                <img src="./assets/imgs/q-mark.svg" alt="question" class="nav-icon">
-                                                <div class="hover-nav">
-                                                    <p><span class="sub-menu-product-name main-name">What
-                                                            Is a
-                                                            Translation
+                                            <a href="./pages/404.html">
+                                                <div class="flex">
+                                                    <img src="./assets/imgs/q-mark.svg" alt="question" class="nav-icon">
+                                                    <div class="hover-nav">
+                                                        <a href="./pages/404.html">
+                                                            <p><span class="sub-menu-product-name main-name">What
+                                                                    Is a
+                                                                    Translation
+                                                                    Management
+                                                                    System?</span>
+                                                            </p>
+                                                        </a>
+                                                        <p>Discover everything you need to know about a Translation
                                                             Management
-                                                            System?</span>
-                                                    </p>
-                                                    <p>Discover everything you need to know about a Translation
-                                                        Management
-                                                        System
-                                                        with our comprehensive guide</p>
+                                                            System
+                                                            with our comprehensive guide</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="nav-img-box">
-                                                <div class="nav-img-big img-margin-r"><img
-                                                        src="./assets/imgs/nav-img-pc.webp" alt="working image">
+                                                <div class="nav-img-box">
+                                                    <div class="nav-img-big img-margin-r"><img
+                                                            src="./assets/imgs/nav-img-pc.webp" alt="working image">
+                                                    </div>
+                                                    <div>
+                                                        <p>Do you know what is a Translation Management System and how
+                                                            it
+                                                            can
+                                                            help you?</p>
+                                                        <button><a href="./pages/404.html">Learn More <span
+                                                                    class="nav-arrow">&rarr;</span></a></button>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <p>Do you know what is a Translation Management System and how
-                                                        it
-                                                        can
-                                                        help you?</p>
-                                                    <a href="./pages/404.html">Learn More <span
-                                                            class="nav-arrow">&rarr;</span></a>
-                                                </div>
-                                            </div>
-
+                                            </a>
                                         </div><!--item-wrap-->
                                     </div><!--sub-item-container-->
                                     <div class="sub-item-container"><!--border-right-->
@@ -287,7 +287,7 @@
 
                         <li class="menu"><!--resources-->
                             <div class="nav-main-container"><a href="./pages/404.html" class="main main-line"><input
-                                        type="checkbox" id="menu-section-3" class="menu-section-3">
+                                        type="checkbox" id="menu-section-3" class="menu-section-3" />
                                     <label for="menu-section-3" class="menu-label">Resources</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-3">
@@ -320,8 +320,8 @@
                                                             it
                                                             can
                                                             help you?</p>
-                                                        <a href="./pages/404.html">Learn More <span
-                                                                class="nav-arrow">&rarr;</span></a>
+                                                        <button><a href="./pages/404.html">Learn More <span
+                                                                    class="nav-arrow">&rarr;</span></a></button>
                                                     </div>
                                                 </div>
                                             </a>
@@ -376,7 +376,7 @@
 
                         <li class="menu"><!--company-->
                             <div class="nav-main-container"><a href="./pages/404.html" class="main main-line"><input
-                                        type="checkbox" id="menu-section-4" class="menu-section-4">
+                                        type="checkbox" id="menu-section-4" class="menu-section-4" />
                                     <label for="menu-section-4" class="menu-label">Company</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-4">
@@ -437,7 +437,7 @@
 
                         <li class="menu"><!--company-->
                             <div class="nav-main-container"><a href="./pages/404.html" class="main main-line"><input
-                                        type="checkbox" id="menu-section-5" class="menu-section-5">
+                                        type="checkbox" id="menu-section-5" class="menu-section-5" />
                                     <label for="menu-section-5" class="menu-label">Get Started</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-5">
@@ -471,8 +471,8 @@
                                                             it
                                                             can
                                                             help you?</p>
-                                                        <a href="./pages/404.html">Learn More <span
-                                                                class="nav-arrow">&rarr;</span></a>
+                                                        <button><a href="./pages/404.html">Learn More <span
+                                                                    class="nav-arrow">&rarr;</span></a></button>
                                                     </div>
                                                 </div>
                                             </a>
