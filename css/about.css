@@ -23,14 +23,10 @@ h2 {
   justify-content: center;
 }
 
-.separater {
+.separater img {
+  width: 100%;
+  height: auto;
   display: block;
-  width: 100vw;
-  height: 33.5rem;
-  background-image: url(../assets/imgs/connectivity-city-device.png);
-  background-size: cover;
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 #mission-vision {
   background-color: var(--light-blue);

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1280px) /*and (min-width: 768px) */ {
+@media screen and (max-width: 1280px) {
   html {
     font-size: 50%; /* 1rem = 5px */
   }
@@ -13,57 +13,34 @@
     font-size: 3.5rem;
   }
   /*********************************************************/
+  h1 {
+    display: none;
+  }
+
   .header-wrapper {
     position: sticky;
     position: -webkit-sticky; /*for safari*/
     top: 0;
     border-bottom: solid 1px var(--gray-f);
+    z-index: 875;
   }
   .global-menu {
     display: none;
   }
   #checkbox-label {
-    /*for hamburger menu lines*/
+    /*for hamburger menu*/
     display: inline-block;
-    width: 40px;
+    width: 100px;
     height: 40px;
     vertical-align: middle;
-    background: linear-gradient(currentcolor, currentcolor) no-repeat 50% 50% /
-        16px 2px,
-      linear-gradient(currentcolor, currentcolor) no-repeat 50% calc(50% - 6px) /
-        16px 2px,
-      linear-gradient(currentcolor, currentcolor) no-repeat 50% calc(50% + 6px) /
-        16px 2px;
+    background-image: url(../assets/logo/logo.svg);
     position: relative;
+    top: 15px;
     margin-bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  input:checked + #checkbox-label {
-    background: none; /* delete lines once checked */
-  }
-
-  input:checked + #checkbox-label::before {
-    /*checked -> line-1*/
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 16px;
-    background-color: currentColor;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  input:checked + #checkbox-label::after {
-    /*checked -> line-2*/
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 16px;
-    background-color: currentColor;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
   .sub-item-container {
     border-right: none;
     flex: 1; /* make all flex items same width*/
@@ -92,7 +69,7 @@
     width: 120px;
     margin: 3rem auto;
   }
-  /*.lang-item:hover .lang-drpdwn-list {/********same as desktop but does not work so use javascript************
+  /*.lang-item:hover .lang-drpdwn-list {/********same as desktop but does not work bacause of hovering feature so use javascript************
     display: block;
   }*/
   .lang-drp-item {
@@ -108,12 +85,12 @@
     width: 100%;
     height: auto;
     z-index: 15;
+    padding-left: 0;
   }
   .top-nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     padding-left: 10px;
   }
   .top-nav li {
@@ -294,7 +271,7 @@
   #action .main-btn-blue {
     width: 22rem;
     position: absolute;
-    top: 10rem;
+    top: 12rem;
     right: 0;
   }
   .action-wrap img {
@@ -386,13 +363,16 @@
     grid-row: 1;
     margin-left: 1rem;
   }
+  #checkbox-label {
+    top: 40%;
+  }
   .mb-none {
     display: none;
   }
-  #checkbox-label {
+  /*#checkbox-label {
     width: 30px;
     height: 30px;
-  }
+  }*/
   .mobile-menu {
     display: block;
     grid-column: 1;
@@ -502,12 +482,7 @@
   .about-title {
     margin-top: 0;
   }
-  .separater {
-    height: 11rem;
-    background-size: cover;
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-  }
+
   .tab-mob-col {
     flex-direction: column;
   }

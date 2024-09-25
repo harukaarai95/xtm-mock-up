@@ -34,33 +34,41 @@ body {
 a {
   text-decoration: none;
 }
+h1,
 h2,
 h3 {
   font-family: var(--title-font);
 }
+h1,
 h2 {
   font-size: 4.3rem;
   font-weight: bold;
+}
+main {
+  z-index: 1;
 }
 .flex {
   display: flex;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: block;
 }
+
 h1 img {
   width: 5em;
+  position: absolute;
+  top: 12px;
+  left: 5%;
+  z-index: 888;
 }
 
 .header-wrapper {
-  position: sticky;
+  /*position: sticky;
   position: -webkit-sticky; /*for safari*/
-  top: 0;
+  /*top: 0;*/
   border-bottom: solid 1px var(--gray-f);
-  z-index: 800;
 }
 header {
   display: flex;
@@ -111,6 +119,8 @@ nav {
   width: 100vw;
   position: relative;
   text-align: left;
+  padding-left: 300px; /****************************************/
+  z-index: 60; /*************/
 }
 
 .global-menu li {
@@ -375,6 +385,7 @@ nav .title-nav-a {
   position: absolute;
   top: 4.5rem;
   right: 5%;
+  z-index: 400;
 }
 
 .header-right a:first-child {
@@ -590,7 +601,7 @@ nav .title-nav-a {
 
 .slide {
   white-space: nowrap;
-  width: 100%; /*--------------*/
+  width: 100%;
   height: 14rem;
   overflow: hidden;
   margin-bottom: 3rem;
@@ -627,8 +638,7 @@ nav .title-nav-a {
   animation-name: slide-5; /*use above named keyframe*/
   animation-duration: 20s; /* total animation duration */
   animation-delay: 1.5s; /* when to start */
-  animation-timing-function: liner; /*same speed*/
-  /*animation-iteration-count: infinite; /* repeat ------------------------------------------*/
+  animation-timing-function: liner;
 }
 
 /*******************************/
@@ -651,7 +661,7 @@ nav .title-nav-a {
 }
 #meet-tms p {
   height: 12rem;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
 }
 .meet-tms-box {
   width: 41.8rem;
@@ -771,6 +781,10 @@ nav .title-nav-a {
   margin-bottom: 2rem;
 }
 
+.step-box-item p {
+  line-height: normal;
+}
+
 .step-box-item,
 .step-box-item-2,
 .step-box-item-3,
@@ -781,9 +795,7 @@ nav .title-nav-a {
   align-content: center;
   position: relative;
 }
-.step-box-item p {
-  line-height: normal;
-}
+
 .step-box-item::before {
   content: "01";
   position: absolute;
@@ -910,9 +922,7 @@ nav .title-nav-a {
 .step-3-container .flex {
   flex: 1;
 }
-/*.step-box-content {
-  max-width: 50%;
-}*/
+
 /***********************************/
 .card {
   z-index: 0;
@@ -967,7 +977,7 @@ nav .title-nav-a {
   margin: 2rem 10%;
 }
 .connect-list {
-  background-color: var(--sky);
+  background-color: white;
   width: 80%;
   border-radius: 37.5px;
   border: solid 1px var(--blue);
@@ -1031,12 +1041,12 @@ nav .title-nav-a {
   width: 100%;
   height: 2px;
   background-color: #0093cd;
-  transform: scaleX(0); /*not to display at default*/
   transform-origin: left;
   transition: transform 0.3s ease;
+  transform: scaleX(0); /*not to display at default*/
 }
 
-/*radio button is hovered or checked, display*/
+/*radio button is hovered or checked, display underline*/
 input[type="radio"]:checked + .connect-underline::after {
   transform: scaleX(1);
 }
@@ -1100,6 +1110,7 @@ input[type="checkbox"] {
   margin: 0 auto;
   gap: 1rem;
 }
+
 /************ footer ***************/
 footer {
   padding: 3% 5%;
@@ -1177,4 +1188,61 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
   gap: 1rem;
+}
+
+/******* back to top *********/
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 1;
+  z-index: 99;
+}
+#page-top a {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: var(--navy);
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  border: solid 2px var(--navy);
+  text-decoration: none;
+  padding: 24px 5px;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#page-top a:hover {
+  text-decoration: none;
+  background-color: lightblue;
+}
+
+/*404*/
+.not-exisit {
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-blue);
+  width: 100%;
+  height: 100vh;
+}
+
+.not-exisit p {
+  margin: 1rem;
+}
+
+.not-exisit a {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+.not-exisit a:hover {
+  background-color: var(--navy);
 }
