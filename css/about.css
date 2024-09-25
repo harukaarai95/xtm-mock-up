@@ -28,6 +28,9 @@ h2 {
   width: 100vw;
   height: 33.5rem;
   background-image: url(../assets/imgs/connectivity-city-device.png);
+  background-size: cover;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 #mission-vision {
   background-color: var(--light-blue);
@@ -42,6 +45,9 @@ h2 {
 #career h3 {
   font-size: 3.4rem;
 }
+#glance h3 {
+  text-align: center;
+}
 #mission-vision p,
 #glance p {
   font-size: 1.8rem;
@@ -54,6 +60,15 @@ h2 {
   padding: 3rem 0;
   background-color: var(--pale-yellow);
 }
+
+.glance-wrap {
+  width: 50rem;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #glance p {
   color: var(--navy);
 }
@@ -64,7 +79,6 @@ h2 {
 .gl-items {
   gap: 1rem;
   align-items: center;
-  justify-content: center;
   height: 40px;
   margin: 2rem;
 }
@@ -76,21 +90,21 @@ summary {
   border-bottom: solid 1px var(--dark-gray);
 }
 details {
-  transition: 1s;
   height: 5rem;
 }
 summary::-webkit-details-marker {
   display: none; /*Safari*/
 }
 details[open] {
-  height: 9rem;
+  background-color: var(--light-blue);
+  height: auto;
 }
 details[open] p {
-  margin: 5px 0;
   padding: 10px;
   opacity: 1;
   line-height: 1.5;
   font-size: 1.4rem;
+  background-color: var(--light-blue);
 }
 .icon {
   display: block;

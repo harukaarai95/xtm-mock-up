@@ -333,14 +333,45 @@
   }
   .about-main p {
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
   }
   .p-2 img {
     width: 20rem;
   }
-}
+  .about-wrap {
+    padding-top: 3rem;
+  }
+  .mission-vision {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
+  /*core*/
+  #core {
+    padding: 3rem;
+  }
+  summary {
+    font-size: 2rem;
+  }
+  details[open] p {
+    margin: 2px 0;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    height: 8rem;
+  }
+  #career p {
+    font-size: 15px;
+    margin: 1rem;
+  }
+  .btn-c {
+    padding: 0.8rem 0;
+    font-size: 14px;
+    width: 28rem;
+    margin: 3rem auto;
+  }
+}
 /****************** mobile ********************/
 @media screen and (max-width: 767px) {
   .wrap-navi {
@@ -462,5 +493,28 @@
   .top-nav .logo {
     width: 100px;
     margin: 5rem auto;
+  }
+  /*****about*****/
+  .p-2 img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .about-title {
+    margin-top: 0;
+  }
+  .separater {
+    height: 11rem;
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  .tab-mob-col {
+    flex-direction: column;
+  }
+  #mission-vision img {
+    width: 20rem;
+  }
+  .glance-wrap {
+    width: 80%;
   }
 }
