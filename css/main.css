@@ -1124,11 +1124,11 @@ footer {
   height: auto;
   margin-bottom: 3rem;
 }
-.foot-1 {
+/*.foot-1 {
   line-height: 1;
-  /*width: 20%;*/
+  /*width: 20%;
   padding: 0 2rem;
-}
+}*/
 .f-address {
   color: var(--gray-f);
 }
