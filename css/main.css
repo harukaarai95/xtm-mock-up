@@ -156,7 +156,7 @@ nav {
 .sub-menu > li > a {
   font-size: 1em;
   text-decoration: none;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .main {
@@ -326,7 +326,7 @@ nav .title-nav-a {
 .nav-img-box button {
   height: 2.5em;
   margin: 0 auto;
-  text-wrap: none;
+  text-wrap: nowrap;
   padding: 0.2em;
   background-color: transparent;
   border: none;
@@ -638,7 +638,7 @@ nav .title-nav-a {
   animation-name: slide-5; /*use above named keyframe*/
   animation-duration: 20s; /* total animation duration */
   animation-delay: 1.5s; /* when to start */
-  animation-timing-function: liner;
+  animation-timing-function: linear;
 }
 
 /*******************************/
@@ -1126,7 +1126,7 @@ footer {
 }
 .foot-1 {
   line-height: 1;
-  width: 20%;
+  /*width: 20%;*/
   padding: 0 2rem;
 }
 .f-address {

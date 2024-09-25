@@ -353,6 +353,9 @@
     grid-template-columns: 2fr 2fr;
     grid-template-rows: auto;
   }
+  #connect .connect-bottom-btn {
+    margin: 30rem 0 10rem 0;
+  }
 }
 /****************** mobile ********************/
 @media screen and (max-width: 767px) {
