@@ -26,12 +26,12 @@ Other components changes as well. Also, to be improve loading page speed, All ic
 
 # PC
 
-<img src="./preview/desktop-landing/png">
+<img src="./preview/desktop-landing.png" width="50%">
 
 # Tablet
 
-<img src="./preview/tablet-landing.png">
+<img src="./preview/tablet-landing.png" width="50%">
 
 # Mobile
 
-<img src="./preview/mobile-landing.png">
+<img src="./preview/mobile-landing.png" width="50%">
