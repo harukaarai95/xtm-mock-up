@@ -112,7 +112,7 @@ nav {
 
 .menu {
   margin-right: 0.5em;
-  height: 1.6rem; /*navと同じ高さにするとホバーいい感じ*/
+  height: 1.6rem;
 }
 .global-menu {
   /**********/
@@ -143,7 +143,7 @@ nav {
   position: absolute;
   width: 0;
   height: 2px;
-  left: 12px;
+  left: 0px;
   bottom: -2px;
   background-color: var(--blue);
   transition: width 0.4s;
@@ -216,11 +216,15 @@ nav {
   color: var(--navy);
   background-color: white;
   border-top: solid 2px var(--gray);
-  visibility: hidden; /************tukeru***********************/
-  transform: translateX(0); /*-28.26vw横軸を親要素からずらす*/
+  visibility: hidden;
+  transform: translateX(0); /*-28.26vw move*/
   transition: all 0.3s ease;
+  color: var(--navy);
 }
 
+.menu label {
+  color: #003b52;
+}
 .item-wrap p {
   font-size: 0.8em;
 }
@@ -441,7 +445,7 @@ nav .title-nav-a {
   text-align: center;
 }
 .lang-drpdwn-list {
-  display: none; /***************lang tukeru***********/
+  display: none; /***************lang********/
   width: 100%;
   height: auto;
   position: absolute;
@@ -1050,7 +1054,7 @@ nav .title-nav-a {
 input[type="radio"]:checked + .connect-underline::after {
   transform: scaleX(1);
 }
-/**********************************input tukeru ****************************************************************/
+/**********************************input****************************/
 input[type="radio"],
 input[type="checkbox"] {
   opacity: 0;

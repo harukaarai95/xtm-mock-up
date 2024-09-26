@@ -18,9 +18,9 @@
   }
 
   .header-wrapper {
-    position: sticky;
+    /*position: sticky;
     position: -webkit-sticky; /*for safari*/
-    top: 0;
+    /*top: 0;*/
     border-bottom: solid 1px var(--gray-f);
     z-index: 875;
   }
@@ -159,7 +159,9 @@
     flex-direction: column;
     width: 100%;
   }
-
+  .sub-menu p {
+    line-height: 1.5;
+  }
   /*btn hover*/
   .nav-demo:hover {
     background-color: #9bc33f;
