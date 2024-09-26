@@ -28,18 +28,21 @@
     <div class="header-wrapper">
         <header>
             <div class="wrap-navi">
-                <div class="mobile-menu"><input type="checkbox" id="checkbox" aria-label="Toggle navigation menu"
-                        aria-labelledby="nav-label" aria-controls="nav-menu" aria-expanded="false" role="tab">
-                    <label for="checkbox" id="checkbox-label" role="button">
+                <div class="mobile-menu" role="tablist"><input type="checkbox" id="checkbox"
+                        aria-label="Toggle navigation menu" aria-labelledby="nav-label" aria-controls="nav-menu"
+                        aria-expanded="false">
+                    <label for="checkbox" id="checkbox-label" role="tab">
                     </label>
                 </div>
-                <nav role="navigation" class="global-menu tab">
+                <nav class="global-menu tab">
                     <ul class="top-nav">
                         <li class="menu">
-                            <div class="nav-main-container"><a href="#" class="main main-line">
-                                    <input type="checkbox" id="menu-section-1" class="menu-section-1" />
+                            <div class="nav-main-container">
+                                <input type="checkbox" id="menu-section-1" class="menu-section-1">
+                                <a href="#" class="main main-line">
                                     <label for="menu-section-1" class="menu-label first-item">Products</label></a><span
-                                    class="arrow-under"></span></div>
+                                    class="arrow-under"></span>
+                            </div>
                             <ul class="sub-menu">
                                 <li class="sub-item-wrap">
                                     <div class="sub-item-container">
@@ -75,7 +78,7 @@
                                                         <img src="./assets/imgs/x.svg" alt="product logo"
                                                             class="nav-img">
                                                         <div class="title-and-description">
-                                                            <p><span class="sub-menu-product-name">Rigi</span> </p>
+                                                            <p><span class="sub-menu-product-name">Rigi</span></p>
                                                             <p class="nav-item-description">Better software translations
                                                                 with visual context</p>
                                                         </div>
@@ -180,8 +183,8 @@
                             </ul>
                         </li><!--li class="menu" -->
                         <li class="menu">
-                            <div class="nav-main-container"><a href="#" class="main main-line"> <input type="checkbox"
-                                        id="menu-section-2" class="menu-section-2" />
+                            <div class="nav-main-container"><input type="checkbox" id="menu-section-2"
+                                    class="menu-section-2"><a href="#" class="main main-line">
                                     <label for="menu-section-2" class="menu-label">Solutions</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu">
@@ -215,8 +218,7 @@
                                                             it
                                                             can
                                                             help you?</p>
-                                                        <button><a href="#">Learn More <span
-                                                                    class="nav-arrow">&rarr;</span></a></button>
+                                                        <a href="#">Learn More <span class="nav-arrow">&rarr;</span></a>
                                                     </div>
                                                 </div>
                                             </a>
@@ -270,8 +272,8 @@
                             </ul>
 
                         <li class="menu"><!--resources-->
-                            <div class="nav-main-container"><a href="#" class="main main-line"><input type="checkbox"
-                                        id="menu-section-3" class="menu-section-3" />
+                            <div class="nav-main-container"><input type="checkbox" id="menu-section-3"
+                                    class="menu-section-3" /><a href="#" class="main main-line">
                                     <label for="menu-section-3" class="menu-label">Resources</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-3">
@@ -304,8 +306,7 @@
                                                             it
                                                             can
                                                             help you?</p>
-                                                        <button><a href="#">Learn More <span
-                                                                    class="nav-arrow">&rarr;</span></a></button>
+                                                        <a href="#">Learn More <span class="nav-arrow">&rarr;</span></a>
                                                     </div>
                                                 </div>
                                             </a>
@@ -359,8 +360,8 @@
                             </ul>
 
                         <li class="menu"><!--company-->
-                            <div class="nav-main-container"><a href="#" class="main main-line"><input type="checkbox"
-                                        id="menu-section-4" class="menu-section-4" />
+                            <div class="nav-main-container"><input type="checkbox" id="menu-section-4"
+                                    class="menu-section-4" /><a href="#" class="main main-line">
                                     <label for="menu-section-4" class="menu-label">Company</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-4">
@@ -420,46 +421,44 @@
                         </li><!--menu-->
 
                         <li class="menu"><!--company-->
-                            <div class="nav-main-container"><a href="#" class="main main-line"><input type="checkbox"
-                                        id="menu-section-5" class="menu-section-5" />
+                            <div class="nav-main-container"><input type="checkbox" id="menu-section-5"
+                                    class="menu-section-5"><a href="#" class="main main-line">
                                     <label for="menu-section-5" class="menu-label">Get Started</label></a><span
                                     class="arrow-under"></span></div>
                             <ul class="sub-menu i-5">
                                 <li class="sub-item-wrap"><!--flex-->
                                     <div class="sub-item-container"><!--border-right-->
                                         <div class="item-wrap">
-                                            <a href="#">
-                                                <div class="flex">
-                                                    <img src="./assets/imgs/q-mark.svg" alt="question" class="nav-icon">
-                                                    <div>
-                                                        <a href="#">
-                                                            <p class="title-nav-a"><span
-                                                                    class="sub-menu-product-name hover-nav">What Is a
-                                                                    Translation
-                                                                    Management
-                                                                    System?</span>
-                                                            </p>
-                                                            <p>Discover everything you need to know about a Translation
+                                            <div class="flex">
+                                                <img src="./assets/imgs/q-mark.svg" alt="question" class="nav-icon">
+                                                <div>
+                                                    <a href="#">
+                                                        <p class="title-nav-a"><span
+                                                                class="sub-menu-product-name hover-nav">What Is a
+                                                                Translation
                                                                 Management
-                                                                System
-                                                                with our comprehensive guide</p>
-                                                        </a>
-                                                    </div>
+                                                                System?</span>
+                                                        </p>
+                                                        <p>Discover everything you need to know about a Translation
+                                                            Management
+                                                            System
+                                                            with our comprehensive guide</p>
+                                                    </a>
                                                 </div>
-                                                <div class="nav-img-box">
-                                                    <div class="nav-img-big img-margin-r"><img
-                                                            src="./assets/imgs/nav-img-pc.webp" alt="working image">
-                                                    </div>
-                                                    <div>
-                                                        <p>Do you know what is a Translation Management System and how
-                                                            it
-                                                            can
-                                                            help you?</p>
-                                                        <button><a href="#">Learn More <span
-                                                                    class="nav-arrow">&rarr;</span></a></button>
-                                                    </div>
+                                            </div>
+                                            <div class="nav-img-box">
+                                                <div class="nav-img-big img-margin-r"><img
+                                                        src="./assets/imgs/nav-img-pc.webp" alt="working image">
                                                 </div>
-                                            </a>
+                                                <div>
+                                                    <p>Do you know what is a Translation Management System and how
+                                                        it
+                                                        can
+                                                        help you?</p>
+                                                    <button><a href="#">Learn More <span
+                                                                class="nav-arrow">&rarr;</span></a></button>
+                                                </div>
+                                            </div>
                                         </div><!--item-wrap-->
                                     </div><!--sub-item-container-->
                                     <div class="sub-item-container"><!--border-right-->
