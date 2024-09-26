@@ -1,6 +1,37 @@
-This is a Mock up website of Translation Management System for school's assignment which showcases my knowledge of css and html for static website.
+# Website Mock Up Project: XTM International---
+
+## Objective---
+
+This is for school assignment to showcase what I learned and can handle semantic HTML and CSS.
+
+## ## Copy right: XTM International---
+
 The original website is: https://xtm.cloud/
 
-All Right resereved: XTM International   
+## Coded by Haruka Arai---
 
-Created by Haruka Arai
+## What My Mock Up Site Has...---
+
+- [Landing page](https://harukaarai95.github.io/xtm-mock-up/)
+- [About Us](https://harukaarai95.github.io/xtm-mock-up/pages/about.html)
+- [Contact Us](https://harukaarai95.github.io/xtm-mock-up/pages/contact-us.html)
+- [404 Page Not Found](https://harukaarai95.github.io/xtm-mock-up/pages/404.html)
+
+## Responsible Layout---
+
+Landing page has a mega menu and "Request a Demo", "Log in" and "Language" buttons. Those layout changes depending on the device width. I set 1280px and 780px as breakpoint.  
+Other components changes as well. Also, to be improve loading page speed, All icons and images are converted into SVGs or Webp files.
+
+## Previews---
+
+# PC
+
+<img src="./assets/preview/desktop-landing/png">
+
+# Tablet
+
+<img src="./preview/tablet-landing.png">
+
+# Mobile
+
+<ing src="./preview/mobile-landing.png">
