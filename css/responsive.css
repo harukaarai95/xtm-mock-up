@@ -157,7 +157,7 @@
   }
   .nav-img-box {
     flex-direction: column;
-    width: 20%;
+    width: 100%;
   }
 
   /*btn hover*/
