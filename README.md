@@ -1,8 +1,6 @@
 # Website Mock Up Project: XTM International
 
----
-
-## Coded by Haruka Arai
+## **Coded by Haruka Arai**
 
 ## Objective
 
