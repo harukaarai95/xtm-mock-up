@@ -6,7 +6,7 @@
 
 This is for school assignment to showcase what I learned and can handle semantic HTML and CSS.
 
-## ## Copy right: XTM International
+## Copy right: XTM International
 
 The original website is: https://xtm.cloud/
 
